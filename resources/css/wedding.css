@@ -1,0 +1,32 @@
+h1{
+	font-size: 5em;
+	font-family: arial,helvetica;
+	color: #fff;
+	margin:0;
+	padding:0;
+}
+.section{
+	text-align:center;
+}
+#section0,
+#section1,
+#section2,
+#section3{
+	background-size: cover;
+}
+#section0{
+	background-image: url(../images/bg1.jpg);
+	padding: 30% 0 0 0;
+}
+#section1{
+	background-image: url(../images/bg2.jpg);
+	padding: 6% 0 0 0;
+}
+#section2{
+	background-image: url(../images/bg3.jpg);
+	padding: 6% 0 0 0;
+}
+#section3{
+	background-image: url(../images/bg4.jpg);
+	padding: 6% 0 0 0;
+}
