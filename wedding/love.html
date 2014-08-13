@@ -13,9 +13,6 @@
 	<link rel="stylesheet" type="text/css" href="./jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="examples.css" />
 	<style>
-
-	/* Style for our header texts
-	* --------------------------------------- */
 	h1{
 		font-size: 5em;
 		font-family: arial,helvetica;
@@ -23,56 +20,38 @@
 		margin:0;
 		padding:0;
 	}
-
-	/* Centered texts in each section
-	* --------------------------------------- */
 	.section{
 		text-align:center;
 	}
-
-
-	/* Backgrounds will cover all the section
-	* --------------------------------------- */
 	#section0,
 	#section1,
 	#section2,
 	#section3{
 		background-size: cover;
 	}
-
-	/* Defining each sectino background and styles
-	* --------------------------------------- */
 	#section0{
-		background-image: url(imgs/bg1.jpg);
+		background-image: url(./examples/imgs/bg1.jpg);
 		padding: 30% 0 0 0;
 	}
 	#section2{
-		background-image: url(imgs/bg3.jpg);
+		background-image: url(./examples/imgs/bg3.jpg);
 		padding: 6% 0 0 0;
 	}
 	#section3{
-		background-image: url(imgs/bg4.jpg);
+		background-image: url(./examples/imgs/bg4.jpg);
 		padding: 6% 0 0 0;
 	}
 	#section3 h1{
 		color: #000;
 	}
-
-
- 	/*Adding background for the slides
-	* --------------------------------------- */
 	#slide1{
-		background-image: url(imgs/bg2.jpg);
+		background-image: url(./examples/imgs/bg2.jpg);
 		padding: 6% 0 0 0;
 	}
 	#slide2{
-		background-image: url(imgs/bg5.jpg);
+		background-image: url(./examples/imgs/bg5.jpg);
 		padding: 6% 0 0 0;
 	}
-
-
-	/* Bottom menu
-	* --------------------------------------- */
 	#infoMenu li a {
 		color: #fff;
 	}
@@ -94,7 +73,6 @@
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				verticalCentered: false
-
 			});
 		});
 	</script>
