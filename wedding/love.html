@@ -21,7 +21,8 @@
 	<!-- Add fancyBox -->
 	<link rel="stylesheet" href="./resources/jquery.fancybox.css" type="text/css" media="screen">
 	<script type="text/javascript" src="./resources/jquery.fancybox.pack.js"></script>
-	<script type="text/javascript" src="./resources/pace.min.js"></script>
+    <link rel="stylesheet" href="../resources/plugin/pace/themes/pace-theme-loading-bar.css" type="text/css" media="screen">
+	<script type="text/javascript" src="../resources/plugin/pace/pace.min.js"></script>
    
 	<!--  익스플로러 9 이하에서는 볼수 없음 알려야 함 -->
 	<script>
@@ -58,23 +59,21 @@
 				buttons	: {}
 			}
 		});
+        Pace.on('hide', function(){
+            $("#outer_wrapper").fadeIn("slow");
+        });
 	});
 	</script>
 	<style type="text/css">.fancybox-margin{margin-right:0px;}</style></head>
 	<body class="has_no_mobile_platform js has_no_ie has_no_ios has_no_phone_platform has_no_touch_support has_rewrite_video_sources_support has_stop_buffering_support has_buffer_underrun_waiting_support has_prebuffering_support  has_no_high_bandwidth pace-done">
-	<div class="pace pace-inactive">
-		<div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
-			<div class="pace-progress-inner"></div>
-		</div>
-		<div class="pace-activity"></div>
-	</div>
+	
 	<!--[if lt IE 9]>
 	<script>
 		alert("죄송해요. 낮은 익스플로러 버전에서는 청첩장을 제대로 보실 수 없어요 .");
 	</script>
 	<div class="ie8_hint"></div>
 	<![endif]-->
-	<div data-theme="wdr" id="outer_wrapper">
+	<div data-theme="wdr" id="outer_wrapper" style="display:none;">
 		<div class="entry slideshow" data-role="slideshow" id="content">
 			<!-- first section 시작-->
 			<section class="page text_position_left fade active" data-id="0" data-template="background_image" id="0">
