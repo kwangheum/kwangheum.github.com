@@ -1,0 +1,95 @@
+body { 
+	color : white;
+	font-family: "Apple SD Gothic Neo", "MalgunGothic", "Malgun Gothic", �뗭�, dotum,Arial,Helvetica,sans-serif;
+}
+
+.fancyboxmodal { white-space:normal; word-break: break-all;}
+
+.load_images .image_0 { background-image:url(../images/img_ybj.jpg)}
+
+.load_images .image_1 { background-image:url(../images/img_ybj00.jpg)}
+
+.load_images .image_2 { background-image:url(../images/img_ybj01.jpg)}
+
+.load_images .image_3 { background-image:url(../images/img_ybj02.jpg)}
+
+.load_images .image_4 { background-image:url(../images/img_ybj03.jpg)}
+
+.load_images .image_5 { background-image:url(../images/img_ybj04.jpg)}
+
+.load_images .image_6 { background-image:url(../images/img_ybj05.jpg)}
+
+.load_images .image_7 { background-image:url(../images/img_ybj06.jpg)}
+
+.load_images .image_8 { background-image:url(../images/img_ybj07.jpg)}
+
+.load_images .image_9 { background-image:url(../images/img_ybj08.jpg)}
+
+.load_images .image_10 { background-image:url(../images/img_ybj09.jpg)}
+
+.load_images .image_11 { background-image:url(../images/img_ybj10.jpg)}
+
+.load_images .image_12 { background-image:url(../images/img_ybj11.jpg)}
+
+.load_images .image_13 { background-image:url(../images/img_ybj12.jpg)}
+
+.load_images .image_14 { background-image:url(../images/img_ybj13.jpg)}
+
+.load_images .image_15 { background-image:url(../images/img_ybj14.jpg)}
+
+.load_images .image_16 { background-image:url(../images/img_ybj15.jpg)}
+
+.load_images .image_17 { background-image:url(../images/img_ybj16.jpg)}
+
+.load_images .image_18 { background-image:url(../images/img_ybj17.jpg)}
+
+.load_images .image_19 { background-image:url(../images/img_ybj18.jpg)}
+
+.load_images .image_20 { background-image:url(../images/img_ybj19.jpg)}
+
+@media screen and (max-width:700px ) { 
+
+.load_images .image_0 { background-image:url(../images/mimg_ybj.jpg)}
+
+.load_images .image_1 { background-image:url(../images/mimg_ybj00.jpg)}
+
+.load_images .image_2 { background-image:url(../images/mimg_ybj01.jpg)}
+
+.load_images .image_3 { background-image:url(../images/mimg_ybj02.jpg)}
+
+.load_images .image_4 { background-image:url(../images/mimg_ybj03.jpg)}
+
+.load_images .image_5 { background-image:url(../images/mimg_ybj04.jpg)}
+
+.load_images .image_6 { background-image:url(../images/mimg_ybj05.jpg)}
+
+.load_images .image_7 { background-image:url(../images/mimg_ybj06.jpg)}
+
+.load_images .image_8 { background-image:url(../images/mimg_ybj07.jpg)}
+
+.load_images .image_9 { background-image:url(../images/mimg_ybj08.jpg)}
+
+.load_images .image_10 { background-image:url(../images/mimg_ybj09.jpg)}
+
+.load_images .image_11 { background-image:url(../images/mimg_ybj10.jpg)}
+
+.load_images .image_12 { background-image:url(../images/mimg_ybj11.jpg)}
+
+.load_images .image_13 { background-image:url(../images/mimg_ybj12.jpg)}
+
+.load_images .image_14 { background-image:url(../images/mimg_ybj13.jpg)}
+
+.load_images .image_15 { background-image:url(../images/mimg_ybj14.jpg)}
+
+.load_images .image_16 { background-image:url(../images/mimg_ybj15.jpg)}
+
+.load_images .image_17 { background-image:url(../images/mimg_ybj16.jpg)}
+
+.load_images .image_18 { background-image:url(../images/mimg_ybj17.jpg)}
+
+.load_images .image_19 { background-image:url(../images/mimg_ybj18.jpg)}
+
+.load_images .image_20 { background-image:url(../images/mimg_ybj19.jpg)}
+
+
+}
