@@ -1,32 +1,26 @@
-h1{
-	font-size: 5em;
-	font-family: arial,helvetica;
-	color: #fff;
-	margin:0;
-	padding:0;
-}
-.section{
-	text-align:center;
-}
-#section0,
-#section1,
-#section2,
-#section3{
-	background-size: cover;
-}
-#section0{
-	background-image: url(../images/wedding/bg1.jpg);
-	padding: 30% 0 0 0;
-}
-#section1{
-	background-image: url(../images/wedding/bg2.jpg);
-	padding: 6% 0 0 0;
-}
-#section2{
-	background-image: url(../images/wedding/bg3.jpg);
-	padding: 6% 0 0 0;
-}
-#section3{
-	background-image: url(../images/wedding/bg4.jpg);
-	padding: 6% 0 0 0;
-}
+/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:40px 0 0 0;
+	}
+	.intro p{
+		color: #fff;
+		padding:40px 0 0 0;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
