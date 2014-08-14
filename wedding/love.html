@@ -30,11 +30,13 @@
 				verticalCentered: false
 			});
 		});
-		Pace.on('hide');
+		Pace.on('hide', function(){
+			$("#fullpage").show();
+		});
 	</script>
 </head>
 <body>
-<div id="fullpage">
+<div id="fullpage" style="display:none;">
 	<div class="section" id="section0"><h1>나광흠</h1></div>
 	<div class="section" id="section1"><h1>정자연</h1></div>
 	<div class="section" id="section2"><h1>웨딩사진</h1></div>
