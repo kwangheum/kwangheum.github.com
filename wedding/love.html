@@ -18,6 +18,7 @@
 	<script src="../resources/plugin/jquery/1.11.1/jquery-1.11.1.min.js"></script>
 	<script src="../resources/plugin/jqueryui/1.11.0/jquery-ui.min.js"></script>
 	<script src="../resources/plugin/fullPage/jquery.fullPage.js"></script>
+	<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 	<!--[if IE]>
 		<script type="text/javascript">
 			 var console = { log: function() {} };
@@ -29,6 +30,25 @@
 			$('#fullpage').fullpage({
 				verticalCentered: false
 			});
+			var mobileDisplay = /(Android|iPhone|iPod|BlackBerry|Windows CE|SAMSUNG|LG|MOT|SonyEricsson)/gi;
+			if(mobileDisplay.test(navigator.userAgent)){
+				Kakao.init('3d6ef611fcc973af20b7d92e1a648f37');
+				Kakao.Link.createTalkLinkButton({
+					container: '#kakao-link-btn',
+					label: '나광흠♥정자연 결혼식에 초대합니다',
+					image: {
+						src: 'http://dn.api1.kage.kakao.co.kr/14/dn/btqaWmFftyx/tBbQPH764Maw2R6IBhXd6K/o.jpg',
+						width: '300',
+						height: '200'
+					},
+					webButton: {
+						text: '모바일 청첩장 보러 가기',
+						url: 'http://kwangheum.github.io/wedding/love'
+					}
+				});
+			}else{
+				$("#kakao-link-btn").remove();
+			}
 		});
 		Pace.on('hide', function(){
 			$("#fullpage").fadeIn("slow")
@@ -42,7 +62,12 @@
 	<div class="section" id="section2"><h1>웨딩사진</h1></div>
 	<div class="section" id="section3"><h1>프로포즈사진</h1></div>
 	<div class="section" id="section4">
-        <a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fkwangheum.github.io%2Fwedding%2Flove" title="[새창열림]'페이스북'에 공유하기" target="_blank" class="face">페이스북</a>
+        <a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fkwangheum.github.io%2Fwedding%2Flove" title="[새창열림]'페이스북'에 공유하기" target="_blank">
+        	페이스북 공유하기
+       	</a>
+		<a id="kakao-link-btn" href="#" style="display:none;">
+			카카오톡 공유하기
+		</a>
     </div>
 </div>
 </body>
