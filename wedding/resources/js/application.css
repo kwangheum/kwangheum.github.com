@@ -4711,7 +4711,7 @@ a.to_top:focus {
 }
 
 .footer .ci {
-	bottom : 3px;
+	bottom : -16px;
 	left : 10%;
 	position : absolute;
 	z-index : 500000;
