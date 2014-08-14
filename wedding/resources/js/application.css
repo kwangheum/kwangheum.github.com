@@ -4715,11 +4715,20 @@ a.to_top:focus {
 	left : 10%;
 	position : absolute;
 	z-index : 500000;
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 500px) {
 	.footer .ci {
-	left : 7%;
+        left : 7%;
+        font-size: 1.2em;
+        bottom : 0px;
 	}
 }
 
