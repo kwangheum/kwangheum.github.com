@@ -10,7 +10,7 @@
 	<meta name="Resource-type" content="Document" />
 	
 	<title>나광흠♥정자연</title>
-	<link rel="image_src" href="./resources/images/wedding/kwangheum.jpg" />
+	<link rel="image_src" href="./resources/images/bg4.jpg" />
 	<link rel="stylesheet" href="../resources/plugin/pace/themes/pace-theme-loading-bar.css" />
 	<link rel="stylesheet" href="./resources/plugin/fullPage/jquery.fullPage.css" />
 	<link rel="stylesheet" href="./resources/css/wedding.css" />
@@ -47,6 +47,11 @@
 			}else{
 				$("#kakao-link-btn").remove();
 			}
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+				sectionsColor: ['#4A6FB1', '#939FAA', '#323539'],
+				scrollOverflow: true
+			});
 		});
 		Pace.on('hide', function(){
 			$("#fullpage").fadeIn("slow")
@@ -54,7 +59,7 @@
 	</script>
 </head>
 <body>
-<div id="fullpage">
+<div id="fullpage" style="display: none;">
 	<div class="section " id="section0">
 		<div class="intro">
 			<h1>Scrolling inside sections</h1>
