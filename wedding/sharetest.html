@@ -11,6 +11,7 @@
 	
 	<title>나광흠♥정자연</title>
 	<link rel="image_src" href="../resources/images/wedding/kwangheum.jpg" />
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 </head>
 <body>
 <a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fkwangheum.github.io%2Fwedding%2Flove" title="[새창열림]'페이스북'에 공유하기" target="_blank" class="face">페이스북</a>
@@ -20,23 +21,20 @@
     </a>
 
     <script>
-    // 사용할 앱의 Javascript 키를 설정해 주세요.
-    Kakao.init('3d6ef611fcc973af20b7d92e1a648f37');
-
-    // 카카오톡 링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
-    Kakao.Link.createTalkLinkButton({
-      container: '#kakao-link-btn',
-      label: '카카오링크 샘플에 오신 것을 환영합니다.',
-      image: {
-        src: 'http://dn.api1.kage.kakao.co.kr/14/dn/btqaWmFftyx/tBbQPH764Maw2R6IBhXd6K/o.jpg',
-        width: '300',
-        height: '200'
-      },
-      webButton: {
-        text: '카카오 디벨로퍼스',
-        url: 'https://dev.kakao.com/docs/js' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
-      }
-    });
+		Kakao.init('3d6ef611fcc973af20b7d92e1a648f37');
+		Kakao.Link.createTalkLinkButton({
+			container: '#kakao-link-btn',
+			label: '나광흠♥정자연 결혼식에 초대합니다',
+			image: {
+				src: 'http://dn.api1.kage.kakao.co.kr/14/dn/btqaWmFftyx/tBbQPH764Maw2R6IBhXd6K/o.jpg',
+				width: '300',
+				height: '200'
+			},
+			webButton: {
+				text: '카카오 디벨로퍼스',
+				url: 'http://kwangheum.github.io/wedding/love' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
+			}
+		});
     </script>
   
 </body>
