@@ -45,19 +45,24 @@
 	color: black
 }
 
+/*
 .invert .contentText a:before {
 	background-image:
 }
+*/
 
 .overview_mobile .credits a,.navigation_credits_box a {
 	color: #b4c552;
 	text-decoration: none
 }
 
+/*
+
 .overview_mobile .credits a:before,.navigation_credits_box a:before {
 	background-image:
 	top: 4px
 }
+*/
 
 .overview_mobile .credits a:hover,.navigation_credits_box a:hover {
 	text-decoration: underline;
