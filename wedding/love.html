@@ -1011,7 +1011,7 @@
 	    activateTrafficMap : false,						// 실시간 교통활성화여부
 	    activateBicycleMap : false,						// 자전거지도 활성화여부
 	    minMaxLevel : [ 1, 14 ],						// 지도의 최소/최대 축적레벨
-	    size : new nhn.api.map.Size("500", "500")		// 지도크기
+	    size : new nhn.api.map.Size($(window).width(), $(window).height())		// 지도크기
 	});
 	
 	var mapZoom = new nhn.api.map.ZoomControl();
