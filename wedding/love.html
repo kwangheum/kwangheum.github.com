@@ -678,35 +678,7 @@
 					<div class="background background_image image_10" style="background-position: 50% 50%;"></div>
 					<div class="shadow" style="opacity: 0.66;"></div>
 				</div>
-				<div class="content scroller">
-					<div style="-webkit-transition: 0ms cubic-bezier(0.1, 0.57, 0.1, 1); transition: 0ms cubic-bezier(0.1, 0.57, 0.1, 1); transform: translate(0px, 0px) translateZ(0px);">
-						<div class="contentWrapper">
-							<div class="page_header">
-								<h2>
-									<span class="tagline"></span>
-									<span class="title"><sup style="font-size:66%">#</sup>9 JJJJJJJJJJ</span>
-									<span class="subtitle"></span>
-								</h2>
-							</div>
-							<div class="contentText">
-								<p>
-									<span class="qst"><strong>Q ‾ JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ</strong></span>
-									<span class="asw">
-                                        <strong>A ‾</strong> 
-                                        JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
-                                        JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
-                                        JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
-                                        JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
-                                        JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
-                                        JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
-                                        JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
-                                        JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
-                                        JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
-                                    </span>
-								</p>
-							</div>
-						</div>
-					</div>
+				<div id="aid_map" class="content" style="width: 500px;height:500px;">
 				</div>
 			</div>
 			<a class="to_top" href="http://reportage.wdr.de/gravity#content">zum Anfang</a>
@@ -1027,7 +999,6 @@
 		},
 		"perma_id": 11
 	}];
-	var height = $("#aid_map").width()/2;
 	var oPoint = new nhn.api.map.LatLng(36.4060218,127.3838725);
 	nhn.api.map.setDefaultPoint('LatLng');
 	oMap = new nhn.api.map.Map('aid_map' ,{
