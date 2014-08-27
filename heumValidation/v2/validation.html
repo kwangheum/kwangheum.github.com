@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ko"><head><script async="" src="//www.google-analytics.com/analytics.js"></script><script>
+<script>
 var ctx = "";
 </script>
-
-
+<html lang="ko">
+<head>
     <title>heumValidation | KWANGHEUM</title>
     
 
@@ -31,9 +31,9 @@ var ctx = "";
 
 
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
 <link rel="stylesheet" href="/resources/plugin/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="/resources/plugin/bootstrap/3.2.0/css/docs.min.css">
@@ -44,7 +44,7 @@ var ctx = "";
 <script src="/resources/plugin/jquery/1.11.1/jquery-1.11.1.min.js"></script>
 <script src="/resources/plugin/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
-<link rel="stylesheet" href="/resources/plugin/toastr/2.0.3/toastr.min.css">
+<link rel="stylesheet" href="/resources/plugin/toastr/2.0.3/toastr.min.css" />
 <script src="/resources/plugin/toastr/2.0.3/toastr.min.js"></script>
 <link href="/resources/css/landing-page.css" rel="stylesheet">
 
@@ -294,9 +294,9 @@ function createModal(id,title,contents){
 <link href="/resources/css/common.css" rel="stylesheet"><link href="/resources/images/favicon.ico" rel="icon" type="image/x-icon">
     
 		
-		<script src="/resources/plugin/ckeditor/ckeditor.js"></script>
-		<script src="/resources/plugin/ckeditor/adapters/jquery.js"></script>
-		<script src="/resources/heumplugin/heumValidation/v1/jquery.bootstrap.heum.validation.js"></script>
+		<script src="/resources/plugin/ckeditor/4.4.4/ckeditor.js"></script>
+		<script src="/resources/plugin/ckeditor/4.4.4/adapters/jquery.js"></script>
+		<script src="/resources/heumplugin/heumValidation/v2/jquery.bootstrap.heum.validation.js"></script>
 		<script>
 			$(document).ready(function(){
 				$("form").heumValidation();
@@ -373,14 +373,14 @@ var ctx = "";
 		<p>heumValidation은 submit하기전 폼들을 검사한다. 만약 validation이 하나라도 false일 경우 전송이 안됩니다</p>
 		<div class="bs-example">
 			<form style="margin-bottom: 50px;">
-				<input type="email" id="email" class="form-control" data-heum-min="2" data-heum-max="20" data-heum-null="false" data-heum-label="이메일">
-				<input type="text" id="text" class="form-control" data-heum-min="2" data-heum-max="12" data-heum-null="false" data-heum-number="true" data-heum-label="숫자">
-				<input type="tel" class="form-control" data-heum-null="false" data-heum-label="연락처">
-				<input type="text" class="form-control" data-heum-validation="false" data-heum-label="검사안함">
-				<input type="checkbox" name="checkbox" data-heum-min="1" data-heum-null="false" data-heum-label="체크1" data-heum-group-label="체크박스" data-heum-vertical="true">
-				<input type="checkbox" name="checkbox" data-heum-label="체크2">
-				<input type="radio" name="radio" data-heum-label="라디오1" data-heum-group-label="라디오박스">
-				<input type="radio" name="radio" data-heum-label="라디오2">
+				<input type="email" id="email" class="form-control" data-heum-min="2" data-heum-max="20" data-heum-null="false" data-heum-label="이메일"/>
+				<input type="text" id="text" class="form-control" data-heum-min="2" data-heum-max="12" data-heum-null="false" data-heum-number="true" data-heum-label="숫자"/>
+				<input type="tel" class="form-control" data-heum-null="false" data-heum-label="연락처"/>
+				<input type="text" class="form-control" data-heum-validation="false" data-heum-label="검사안함"/>
+				<input type="checkbox" name="checkbox" data-heum-min="1" data-heum-null="false" data-heum-label="체크1" data-heum-group-label="체크박스" data-heum-vertical="true"/>
+				<input type="checkbox" name="checkbox" data-heum-label="체크2"/>
+				<input type="radio" name="radio" data-heum-label="라디오1" data-heum-group-label="라디오박스"/>
+				<input type="radio" name="radio" data-heum-label="라디오2"/>
 				<textarea></textarea>
 				<div class="form-group pull-right" style="padding-right: 20px;">
 					<div class="btn-group">
@@ -398,10 +398,10 @@ var ctx = "";
 		<div class="table-responsive">
 			<table class="table table-bordered table-striped">
 				<colgroup>
-					<col width="20%">
-					<col width="10%">
-					<col width="10%">
-					<col width="60%">
+					<col width="20%"/>
+					<col width="10%"/>
+					<col width="10%"/>
+					<col width="60%"/>
 				</colgroup>
 				<thead>
 					<tr>
@@ -418,7 +418,7 @@ var ctx = "";
 						<td>0</td>
 						<td>
 							최소로 입력해야할 글자 수 입니다, checkbox는 최소 몇개 선택
-							<br>0이면 체크 하지 않습니다
+							<br/>0이면 체크 하지 않습니다
 						</td>
 					</tr>
 					<tr>
@@ -427,7 +427,7 @@ var ctx = "";
 						<td>0</td>
 						<td>
 							최대 입력할 수 있는 글자 수 입니다, checkbox는 최소 몇개 선택
-							<br>0이면 체크 하지 않습니다
+							<br/>0이면 체크 하지 않습니다
 						</td>
 					</tr>
 					<tr>
@@ -489,9 +489,9 @@ var ctx = "";
 		<div class="table-responsive">
 			<table class="table table-bordered table-striped">
 				<colgroup>
-					<col width="20%">
-					<col width="10%">
-					<col width="70%">
+					<col width="20%"/>
+					<col width="10%"/>
+					<col width="70%"/>
 				</colgroup>
 				<thead>
 					<tr>
@@ -536,9 +536,9 @@ var ctx = "";
 						<td><span class="text-muted">undefined</span></td>
 						<td>
 							division에 따라 요소 색이 변경됩니다
-							division 종류는 <span class="text-danger">error</span>,<span class="text-warning">warning</span>,<span class="text-success">success</span>가있습니다<br>
-							text는 원하는 validation 글자를 표시합니다<br>
-							<small class="text-muted">(해당 기능은 jquery.bootstrap.heum.validation.js에만 해당됩니다)</small><br>
+							division 종류는 <span class="text-danger">error</span>,<span class="text-warning">warning</span>,<span class="text-success">success</span>가있습니다<br/>
+							text는 원하는 validation 글자를 표시합니다<br/>
+							<small class="text-muted">(해당 기능은 jquery.bootstrap.heum.validation.js에만 해당됩니다)</small><br/>
 						</td>
 					</tr>
 				</tbody>
@@ -586,25 +586,25 @@ var ctx = "";
 					<li>
 						<a href="https://www.facebook.com/kwangheumOoO" class="btn btn-default btn-lg" target="_blank">
 							<span class="network-name hidden-xs">FACEBOOK</span>
-							<img class="visible-xs" src="/resources/images/button/facebook-black.png" width="20">
+							<img class="visible-xs" src="/resources/images/button/facebook-black.png" width="20"/>
 						</a>
 					</li>
 					<li>
 						<a href="https://github.com/kwangheum" class="btn btn-default btn-lg" target="_blank">
 							<span class="network-name hidden-xs">GITHUB</span>
-							<img class="visible-xs" src="/resources/images/button/github-black.png" width="20">
+							<img class="visible-xs" src="/resources/images/button/github-black.png" width="20"/>
 						</a>
 					</li>
 					<li>
 						<a href="https://kwangheum.blogspot.com" class="btn btn-default btn-lg" target="_blank">
 							<span class="network-name hidden-xs">BLOG</span>
-							<img class="visible-xs" src="/resources/images/button/blogger-black.png" width="20">
+							<img class="visible-xs" src="/resources/images/button/blogger-black.png" width="20"/>
 						</a>
 					</li>
 					<li>
 						<a href="mailto:myrkh1213@naver.com" class="btn btn-default btn-lg" title="myrkh1213@naver.com">
 							<span class="network-name hidden-xs">@</span>
-							<img class="visible-xs" src="/resources/images/button/email-black.png" width="20">
+							<img class="visible-xs" src="/resources/images/button/email-black.png" width="20"/>
 						</a>
 					</li>
 				</ul>
@@ -622,5 +622,5 @@ var ctx = "";
   ga('send', 'pageview');
 
 </script></div>
-
-</body></html>
+</body>
+</html>
