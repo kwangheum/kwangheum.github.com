@@ -43,6 +43,9 @@ body, h1, h2, h3, h4, h5, h6 {
 .intro-message > h3 {
 	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
+.intro-message > h2 {
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
 
 @media (max-width: 767px) {
 	.intro-message {
@@ -132,10 +135,13 @@ body, h1, h2, h3, h4, h5, h6 {
 		font-size: 3em;
 	}
 
+	ul.banner-social-buttons {
+		width:100%;
+		text-align: center;
+	}
 	ul.banner-social-buttons > li {
-		display: block;
 		margin-bottom: 20px;
-		padding: 0;
+		padding: 20;
 	}
 
 	ul.banner-social-buttons > li:last-child {
@@ -150,4 +156,11 @@ footer {
 
 p.copyright {
 	margin: 15px 0 0;
+}
+.kwangheum-logo{
+	text-align: center;
+}
+.kwangheum-log img{
+	width:100%;
+	max-width:966px;
 }
