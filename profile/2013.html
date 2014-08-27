@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-    <title>나광흠 이력 | KWANGHEUM</title>
+<html lang="ko" class=" js boxshadow pointerevents placeholder"><head><script async="" src="//www.google-analytics.com/analytics.js"></script><script>
+var ctx = "";
+</script>
+
+
+    <title>환영합니다 나광흠 홈페이지입니다 | KWANGHEUM</title>
     
 
 
@@ -22,12 +25,18 @@
 
 
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<script>
+var ctx = "";
+</script>
 
-<link rel="stylesheet" href="/resources/plugin/bootstrap/3.1.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="/resources/plugin/bootstrap/3.1.1/css/docs.min.css">
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<link rel="stylesheet" href="/resources/plugin/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="/resources/plugin/bootstrap/3.2.0/css/docs.min.css">
 <!--[if lt IE 9]>
     <script src="/resources/plugin/html5shiv.js"></script>
     <script src="/resources/plugin/respond.min.js"></script>
@@ -35,9 +44,254 @@
 <script src="/resources/plugin/jquery/1.11.1/jquery-1.11.1.min.js"></script>
 <script src="/resources/plugin/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
-<link rel="stylesheet" href="/resources/plugin/toastr/2.0.3/toastr.min.css" />
+<link rel="stylesheet" href="/resources/plugin/toastr/2.0.3/toastr.min.css">
 <script src="/resources/plugin/toastr/2.0.3/toastr.min.js"></script>
-<link href="/resources/css/landing-page.css" rel="stylesheet"><link href="/resources/images/favicon.ico" rel="icon" type="image/x-icon">
+<link href="/resources/css/landing-page.css" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var ctx = "";
+</script>
+
+
+
+<script> 
+var initToday = new Date();
+$(document).ready(function(){
+	$.each($("form"),function(){
+		$(this).find("input[type=file]").attr("onchange","return changeFile(this);");
+	});
+});
+function removeFile(selector){
+	var maxSize = 50000000/1024;
+	var parentsTbody = $(selector).parents("tbody");
+	var selectorFileSize = $(selector).data("file-size");
+	var currentFileSize = parseInt($("#size-"+parentsTbody.attr("id")).text())-parseInt(selectorFileSize);
+	$("#size-"+parentsTbody.attr("id")).removeClass();
+	if(currentFileSize>maxSize){
+		$("#size-"+parentsTbody.attr("id")).addClass("text-danger");
+		$(selector).parents("form").find("input[type=file]").attr("onclick","toastr.error('용량이 초과되었습니다.');return false;");
+		$("#validation-"+parentsTbody.attr("id")).text("업로드 하실 용량이 초과되었습니다");
+	}else{
+		$(selector).parents("form").find("input[type=file]").attr("onclick","return changeFile(this);");
+		$("#validation-"+parentsTbody.attr("id")).text("");
+	}
+	$("#size-"+parentsTbody.attr("id")).text(currentFileSize);
+	
+	$("#"+$(selector).data("parent")).remove();
+	$(selector).parents(".file-group").remove();
+	
+	if(parentsTbody.find("tr").size()<=0){
+		parentsTbody.append('<tr class="emptyTr"><td colspan="4">파일이 존재하지 않습니다</td></tr>');
+	}
+}
+function changeFile(selector){
+	var maxSize = 50000000/1024;
+	var error = false,error_file_name = new Array();
+	
+		$.each($(selector)[0].files,function(count,node){
+			var extension = node.name.substring(node.name.lastIndexOf(".")+1),
+				filename = node.name.substring(0,node.name.lastIndexOf("."));
+			if(/(asp|php|jsp|aspx|cig|ext|exe)/.test(extension)!=false){
+				error = true;
+				error_file_name.push(filename+"<span class='text-danger'>."+extension+"</span>"+"<br/>");
+			}else{
+				error_file_name.push(filename+"."+extension+"<br/>");
+				
+			}
+		});
+	
+	if(error){
+		if($("#errorFileModal").size()<=0){
+			var modalContents = 
+				
+					
+					
+						'업로드 불가한 확장자는 다음과 같습니다.<br/>'+
+						'<p class="text-danger">asp,php,jsp,aspx,cig,ext,exe</p>'+
+					
+				
+				'<p>회원님께서 업로드 하실 파일 중 리스트중 빨간색의 확장자는 업로드 하실 수 없습니다.</p>'+
+				'<div id="errorFileList" class="errorFileList" style="margin: 10px 0px;padding: 5px 10px;border: 1px solid #C5D5F1;background: aliceblue;"></div>'+
+				'<strong>파일을 다시 선택해주세요.</strong>';
+			createModal("errorFile", "파일 업로드 불가 리스트", modalContents);
+		}
+		$("#errorFileList").html(error_file_name);
+		$("#errorFileModal").modal("show");
+		$(selector).val("");
+		return false;
+	}else{
+		var nowDate = new Date();
+		var fileListId = "fileList-"+initToday.getTime();
+		
+		if($("#"+fileListId).size()<=0){
+			$(selector).after(
+				'<div id="table-'+fileListId+'">'+
+					
+						'(<span id="size-'+fileListId+'">0</span>/'+maxSize+' KB)'+
+					
+					'<div class="table-responsive">'+
+						'<table class="table table-bordered">'+
+							'<thead>'+
+								'<tr>'+
+									'<th>파일 명</th>'+
+									
+										'<th class="text-center">파일 개수</th>'+
+										'<th class="text-center">파일 총 용량</th>'+
+									
+									'<th class="text-center">삭제</th>'+
+								'</tr>'+
+							'</thead>'+
+							'<tbody id="'+fileListId+'" class="text-center">'+
+							'</tbody>'+
+						'</table>'+
+					'</div>'+
+				'</div>'+
+				'<div class="text-danger" id="validation-"'+fileListId+'></div>'
+			);
+			$(selector).parents("form").submit(function(){
+				if(parseInt($("#size-"+fileListId).text())>maxSize){
+					$("#validation-"+fileListId).text("업로드 하실 용량이 초과되었습니다");
+					toastr.error("업로드 하실 용량이 초과되었습니다<br/>최대 용량은"+maxSize+"(KB)입니다");
+					return false;
+				}
+			});
+		}
+		$("#"+fileListId).find("tr.emptyTr").remove();
+		if($(selector).attr("id")==undefined||$(selector).attr("id").replace(/ /gi,'')==''){
+			$(selector).attr("id",$(selector).attr("name")+nowDate.getTime());
+		}
+		$(selector).parents("form").find("input[type=file]").hide();
+		var newDate = new Date();
+		var cloneThis = $("<input/>",{
+			type:"file",
+			class:$(selector).attr("class"),
+			id:$(selector).attr("name")+newDate.getTime()+newDate.getMilliseconds(),
+			name:"myfile",
+			
+				multiple:"multiple",
+			
+			onchange:"return changeFile(this);"
+		});
+		$(selector).before(cloneThis.show());
+		var fileList = "";
+		var fileCurrrentTotalSize = 0;
+		
+			
+				$.each(selector.files,function(cnt,node){
+					fileList+="<tr><td>"+(cnt+1)+"</td><td class='text-left'>"+node.name+"</td><td class='text-right'>"+parseInt(node.size/1024).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')+"(KB)</td></tr>";
+					fileCurrrentTotalSize+=parseInt(node.size/1024);
+				});
+			
+			
+		
+		var modalContents = 
+			'<table class="table table-striped text-center">'+
+				'<thead>'+
+					'<tr>'+
+						'<th class="text-center">번호</th>'+
+						'<th class="text-left">파일이름</th>'+
+						
+							'<th class="text-right">파일사이즈</th>'+
+						
+					'</tr>'+
+				'</thead>'+
+				'<tbody>'+
+					fileList+
+				'</tbody>'+
+				'<tfoot class="text-danger">'+
+					'<tr><td></td><td></td>'+
+					
+						'<td class="text-right">'+fileCurrrentTotalSize.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')+'(KB)</td></tr>'+
+					
+				'</tfoot>'+
+			'</table>';
+		createModal("file-modal-"+$(selector).attr("id"), "선택 파일 목록", modalContents);
+		
+			var fileTotalSize = parseInt($("#size-"+fileListId).text())+parseInt(fileCurrrentTotalSize);
+			if(fileTotalSize>maxSize){
+				$("#size-"+fileListId).removeClass().addClass("text-danger");
+				$(selector).parents("form").find("input[type=file]").attr("onclick","toastr.error('용량이 초과되었습니다.');return false;");
+				$("#validation-"+fileListId).text("업로드 하실 용량이 초과되었습니다");
+			}else{
+				$(selector).parents("form").find("input[type=file]").attr("onclick","return changeFile(this);");
+				$("#validation-"+fileListId).text("");
+			}
+			$("#size-"+fileListId).text(fileTotalSize);
+		
+		$("#"+fileListId).append(
+			'<tr class="file-group">'+		
+				'<td class="text-left">'+
+					'<a href="#" data-toggle="modal" data-target="#file-modal-'+$(selector).attr("id")+'Modal">'+
+						
+							
+								selector.files[0].name+(selector.files.length>1?" 외"+(selector.files.length-1)+"건":"")+
+							
+							
+						
+					'</a>'+
+				'</td>'+		
+				
+					'<td>'+selector.files.length+'</td>'+
+					'<td>'+fileCurrrentTotalSize.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')+'(KB)</td>'+
+				
+				'<td>'+
+					'<span class="glyphicon glyphicon-remove text-danger" data-file-size="'+fileCurrrentTotalSize+'" data-parent="'+$(selector).attr("id")+'" onclick="removeFile(this)" title="파일 업로드 취소" style="cursor:pointer;"></span>'+
+				'</td>'+
+			'</tr>'
+		);
+	}
+}
+function createModal(id,title,contents){
+	if(contents.replace(/ /gi,'')==''){
+		alert("생성할 modal의 내용을 작성해주세요");
+	}else{
+		var modalTitle="";
+		if(title.replace(/ /gi,'')!=''){
+			modalTitle=
+				'<div class="modal-header">'+
+					'<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>'+
+					'<h4 class="modal-title" id="'+id+'ModalLabel">'+title+'</h4>'+
+				'</div>';
+		}
+		$("body").append(
+			'<div class="modal fade" id="'+id+'Modal" tabindex="-1" role="dialog" aria-labelledby="'+id+'ModalLabel" aria-hidden="true">'+
+				'<div class="modal-dialog">'+
+					'<div class="modal-content">'+
+						modalTitle+
+						'<div class="modal-body">'+
+							contents+
+						'</div>'+
+						'<div class="modal-footer">'+
+							'<button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>'+
+						'</div>'+
+					'</div>'+
+				'</div>'+
+			'</div>'
+		);
+	}
+}
+</script>
+
+<link href="/resources/css/common.css" rel="stylesheet"><link href="/resources/images/favicon.ico" rel="icon" type="image/x-icon">
     
 	
 </head>
@@ -62,6 +316,19 @@
 
 
 
+<script>
+var ctx = "";
+</script>
+
+
+
+<div class="kwangheum-logo">
+	<h1>
+		<a href="/main">
+			Web Recipes
+		</a>
+	</h1>
+</div>
 <header class="navbar navbar-static-top bs-docs-nav" id="top">
 	<div class="container">
 		<div class="navbar-header">
@@ -71,21 +338,29 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a href="/" class="navbar-brand">KWANGHEUM</a>
 		</div>
 		<nav class="collapse navbar-collapse bs-navbar-collapse">
 			<ul class="nav navbar-nav">
 				<li class="active">
-					<a href="/2014.html">profile</a>
+					<a href="/profile/2014">profile</a>
 				</li>
 				<li class="">
-					<a href="/heumRolling/rolling.html">heumRolling</a>
+					<a href="/heumRolling/v1/rolling">heumRolling</a>
 				</li>
 				<li class="">
-					<a href="/heumValidation/validation.html">heumValidation</a>
+					<a href="/heumValidation/v2/validation">heumValidation</a>
 				</li>
 			</ul>
-			
+			<ul class="nav navbar-nav navbar-right">
+				<li class="">
+					
+			    		
+			    		
+			    			<a href="/user/login.it">login</a>
+			    		
+			    	
+				</li>
+			</ul>
 		</nav>
 	</div>
 </header><div class="container bs-docs-container">
@@ -113,6 +388,12 @@
 
 
 
+<script>
+var ctx = "";
+</script>
+
+
+
 
 <div class="content-section-b">
 	<div class="container">
@@ -127,9 +408,9 @@
 					<table class="table">
 						<colgroup>
 							
-							<col width="25%"/>
-							<col width="25%"/>
-							<col width="*%"/>
+							<col width="25%">
+							<col width="25%">
+							<col width="*%">
 						</colgroup>
 						<thead>
 							<tr>
@@ -153,7 +434,7 @@
 											<td>
 												
 													
-														<span style="" class="history" data-division="endDate" data-date="2001-01-01"  onclick="return changeInput(this);">
+														<span style="" class="history" data-division="endDate" data-date="2001-01-01" onclick="return changeInput(this);">
 															2001
 														</span>
 													
@@ -175,7 +456,7 @@
 											<td>
 												
 													
-														<span style="" class="history" data-division="endDate" data-date="2004-01-01"  onclick="return changeInput(this);">
+														<span style="" class="history" data-division="endDate" data-date="2004-01-01" onclick="return changeInput(this);">
 															2004
 														</span>
 													
@@ -197,7 +478,7 @@
 											<td>
 												
 													
-														<span style="" class="history" data-division="endDate" data-date="2007-01-01"  onclick="return changeInput(this);">
+														<span style="" class="history" data-division="endDate" data-date="2007-01-01" onclick="return changeInput(this);">
 															2007
 														</span>
 													
@@ -219,7 +500,7 @@
 											<td>
 												
 													
-														<span style="" class="history" data-division="endDate" data-date="2013-01-01"  onclick="return changeInput(this);">
+														<span style="" class="history" data-division="endDate" data-date="2013-01-01" onclick="return changeInput(this);">
 															2013
 														</span>
 													
@@ -241,7 +522,7 @@
 											<td>
 												
 													
-														<span style="" class="history" data-division="endDate" data-date="2012-01-01"  onclick="return changeInput(this);">
+														<span style="" class="history" data-division="endDate" data-date="2012-01-01" onclick="return changeInput(this);">
 															2012
 														</span>
 													
@@ -249,7 +530,7 @@
 												
 											</td>
 											<td class="text-right">
-												<span style="" data-division="organization" onclick="return changeInput(this);">Universität Hildesheim</span>
+												<span style="" data-division="organization" onclick="return changeInput(this);">Uni Hildesheim</span>
 											</td>
 										</tr>
 									
@@ -282,7 +563,7 @@
 				
 			</div>
 			<div class="col-lg-5 col-sm-pull-6  col-sm-6 text-center">
-				<img class="img-thumbnail" src="/resources/images/about/kwangheum.jpg" alt="" style="max-width:300px;width:100%;"/>
+				<img class="img-thumbnail" src="/resources/images/about/kwangheum.jpg" alt="" style="max-width:300px;width:100%;">
 			</div>
 		</div>
 	</div>
@@ -308,7 +589,13 @@
 
 
 
-<link rel="stylesheet" type="text/css" href="/resources/plugin/3DTimeline/css/style.css" />
+<script>
+var ctx = "";
+</script>
+
+
+
+<link rel="stylesheet" type="text/css" href="/resources/plugin/3DTimeline/css/style.css">
 <script src="/resources/plugin/3DTimeline/js/modernizr.custom.63321.js"></script>
 <script>
 	$(document).ready(function(){
@@ -347,22 +634,22 @@
 <div class="container">
 	<div id="timeline-year">
 		
-			<a href="/profile/2013.html" class="year active">2013</a>
+			<a href="/profile/2013" class="year active">2013</a>
 		
-			<a href="/profile/2014.html" class="year ">2014</a>
+			<a href="/profile/2014" class="year ">2014</a>
 		
 	</div>
 	<ul class="timeline">
 		
 			<li class="event" style="cursor: pointer;">
-				<input type="radio" name="tl-group" checked/>
+				<input type="radio" name="tl-group" checked="">
 				<label></label>
 				<div class="thumb">
-					<span class="month">1 월</span>
-					<span class="day">
+					<span class="start-date">1 월</span>
+					<span class="end-date">
 						2
 						
-							~26
+							~2.26
 						 
 					</span>
 				</div>
@@ -375,8 +662,8 @@
 									<span class="glyphicon glyphicon-calendar"></span>
 									2013-1-2~2013-2-26
 								</span>
-								<br/>
-								SERVER : apache,tomcat<br/>LANGUAGE : <br/>&nbsp;&nbsp;&nbsp;&nbsp;spring 3.1<br/>&nbsp;&nbsp;&nbsp;&nbsp;ibatis<br/>&nbsp;&nbsp;&nbsp;&nbsp;jquery (etc.)
+								<br>
+								SERVER : apache,tomcat<br>LANGUAGE : <br>&nbsp;&nbsp;&nbsp;&nbsp;spring 3.1<br>&nbsp;&nbsp;&nbsp;&nbsp;ibatis<br>&nbsp;&nbsp;&nbsp;&nbsp;jquery (etc.)
 							</p>
 						</div>
 					</div>
@@ -384,14 +671,14 @@
 			</li>
 		
 			<li class="event" style="cursor: pointer;">
-				<input type="radio" name="tl-group" />
+				<input type="radio" name="tl-group">
 				<label></label>
 				<div class="thumb">
-					<span class="month">5 월</span>
-					<span class="day">
+					<span class="start-date">5 월</span>
+					<span class="end-date">
 						16
 						
-							~14
+							~6.14
 						 
 					</span>
 				</div>
@@ -404,8 +691,8 @@
 									<span class="glyphicon glyphicon-calendar"></span>
 									2013-5-16~2013-6-14
 								</span>
-								<br/>
-								SERVER : tomcat<br/>LANGUAGE : <br/>&nbsp;&nbsp;&nbsp;&nbsp;spring 3.0<br/>&nbsp;&nbsp;&nbsp;&nbsp;ibatis<br/>&nbsp;&nbsp;&nbsp;&nbsp;jquery (etc.)
+								<br>
+								SERVER : tomcat<br>LANGUAGE : <br>&nbsp;&nbsp;&nbsp;&nbsp;spring 3.0<br>&nbsp;&nbsp;&nbsp;&nbsp;ibatis<br>&nbsp;&nbsp;&nbsp;&nbsp;jquery (etc.)
 							</p>
 						</div>
 					</div>
@@ -413,14 +700,14 @@
 			</li>
 		
 			<li class="event" style="cursor: pointer;">
-				<input type="radio" name="tl-group" />
+				<input type="radio" name="tl-group">
 				<label></label>
 				<div class="thumb">
-					<span class="month">6 월</span>
-					<span class="day">
+					<span class="start-date">6 월</span>
+					<span class="end-date">
 						12
 						
-							~12
+							~7.12
 						 
 					</span>
 				</div>
@@ -433,8 +720,8 @@
 									<span class="glyphicon glyphicon-calendar"></span>
 									2013-6-12~2013-7-12
 								</span>
-								<br/>
-								SERVER : tomcat<br/>LANGUAGE : <br/>&nbsp;&nbsp;&nbsp;&nbsp;spring 2.0<br/>&nbsp;&nbsp;&nbsp;&nbsp;ibatis<br/>&nbsp;&nbsp;&nbsp;&nbsp;jquery (etc.)
+								<br>
+								SERVER : tomcat<br>LANGUAGE : <br>&nbsp;&nbsp;&nbsp;&nbsp;spring 2.0<br>&nbsp;&nbsp;&nbsp;&nbsp;ibatis<br>&nbsp;&nbsp;&nbsp;&nbsp;jquery (etc.)
 							</p>
 						</div>
 					</div>
@@ -442,14 +729,14 @@
 			</li>
 		
 			<li class="event" style="cursor: pointer;">
-				<input type="radio" name="tl-group" />
+				<input type="radio" name="tl-group">
 				<label></label>
 				<div class="thumb">
-					<span class="month">7 월</span>
-					<span class="day">
+					<span class="start-date">7 월</span>
+					<span class="end-date">
 						29
 						
-							~30
+							~9.30
 						 
 					</span>
 				</div>
@@ -462,8 +749,8 @@
 									<span class="glyphicon glyphicon-calendar"></span>
 									2013-7-29~2013-9-30
 								</span>
-								<br/>
-								SERVER : tomcat<br/>LANGUAGE : <br/>&nbsp;&nbsp;&nbsp;&nbsp;spring 3.2<br/>&nbsp;&nbsp;&nbsp;&nbsp;mybatis<br/>&nbsp;&nbsp;&nbsp;&nbsp;jquery (etc.)
+								<br>
+								SERVER : tomcat<br>LANGUAGE : <br>&nbsp;&nbsp;&nbsp;&nbsp;spring 3.2<br>&nbsp;&nbsp;&nbsp;&nbsp;mybatis<br>&nbsp;&nbsp;&nbsp;&nbsp;jquery (etc.)
 							</p>
 						</div>
 					</div>
@@ -471,14 +758,14 @@
 			</li>
 		
 			<li class="event" style="cursor: pointer;">
-				<input type="radio" name="tl-group" />
+				<input type="radio" name="tl-group">
 				<label></label>
 				<div class="thumb">
-					<span class="month">8 월</span>
-					<span class="day">
+					<span class="start-date">8 월</span>
+					<span class="end-date">
 						1
 						
-							~11
+							~9.11
 						 
 					</span>
 				</div>
@@ -491,8 +778,8 @@
 									<span class="glyphicon glyphicon-calendar"></span>
 									2013-8-1~2013-9-11
 								</span>
-								<br/>
-								SERVER : jeus<br/>LANGUAGE : <br/>&nbsp;&nbsp;&nbsp;&nbsp;spring 3.1<br/>&nbsp;&nbsp;&nbsp;&nbsp;ibatis<br/>&nbsp;&nbsp;&nbsp;&nbsp;jquery (etc.)
+								<br>
+								SERVER : jeus<br>LANGUAGE : <br>&nbsp;&nbsp;&nbsp;&nbsp;spring 3.1<br>&nbsp;&nbsp;&nbsp;&nbsp;ibatis<br>&nbsp;&nbsp;&nbsp;&nbsp;jquery (etc.)
 							</p>
 						</div>
 					</div>
@@ -500,11 +787,11 @@
 			</li>
 		
 			<li class="event" style="cursor: pointer;">
-				<input type="radio" name="tl-group" />
+				<input type="radio" name="tl-group">
 				<label></label>
 				<div class="thumb">
-					<span class="month">9 월</span>
-					<span class="day">
+					<span class="start-date">9 월</span>
+					<span class="end-date">
 						12
 						 
 					</span>
@@ -518,8 +805,8 @@
 									<span class="glyphicon glyphicon-calendar"></span>
 									2013-9-12~
 								</span>
-								<br/>
-								SERVER : apache,tomcat<br/>LANGUAGE : <br/>&nbsp;&nbsp;&nbsp;&nbsp;spring 3.2<br/>&nbsp;&nbsp;&nbsp;&nbsp;spring security 3.1<br/>&nbsp;&nbsp;&nbsp;&nbsp;mybatis<br/>&nbsp;&nbsp;&nbsp;&nbsp;ext js 4.2<br/>&nbsp;&nbsp;&nbsp;&nbsp;jquery etc. (etc.)
+								<br>
+								SERVER : apache,tomcat<br>LANGUAGE : <br>&nbsp;&nbsp;&nbsp;&nbsp;spring 3.2<br>&nbsp;&nbsp;&nbsp;&nbsp;spring security 3.1<br>&nbsp;&nbsp;&nbsp;&nbsp;mybatis<br>&nbsp;&nbsp;&nbsp;&nbsp;ext js 4.2<br>&nbsp;&nbsp;&nbsp;&nbsp;jquery etc. (etc.)
 							</p>
 						</div>
 					</div>
@@ -554,6 +841,12 @@
 
 
 
+<script>
+var ctx = "";
+</script>
+
+
+
 <div class="banner">
 	<div class="container">
 		<div class="row">
@@ -564,31 +857,33 @@
 				<ul class="list-inline banner-social-buttons">
 					<li>
 						<a href="https://www.facebook.com/kwangheumOoO" class="btn btn-default btn-lg" target="_blank">
-							<i class="fa fa-facebook fa-fw"></i>
-							<span class="network-name">FACEBOOK</span>
+							<span class="network-name hidden-xs">FACEBOOK</span>
+							<img class="visible-xs" src="/resources/images/button/facebook-black.png" width="20">
 						</a>
 					</li>
 					<li>
 						<a href="https://github.com/kwangheum" class="btn btn-default btn-lg" target="_blank">
-							<i class="fa fa-github fa-fw"></i>
-							<span class="network-name">GITHUB</span>
+							<span class="network-name hidden-xs">GITHUB</span>
+							<img class="visible-xs" src="/resources/images/button/github-black.png" width="20">
 						</a>
 					</li>
 					<li>
 						<a href="https://kwangheum.blogspot.com" class="btn btn-default btn-lg" target="_blank">
-							<span class="network-name">BLOG</span>
+							<span class="network-name hidden-xs">BLOG</span>
+							<img class="visible-xs" src="/resources/images/button/blogger-black.png" width="20">
 						</a>
 					</li>
 					<li>
 						<a href="mailto:myrkh1213@naver.com" class="btn btn-default btn-lg" title="myrkh1213@naver.com">
-							<span>@</span>
+							<span class="network-name hidden-xs">@</span>
+							<img class="visible-xs" src="/resources/images/button/email-black.png" width="20">
 						</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
-</div></div>
+</div>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -598,6 +893,6 @@
   ga('create', 'UA-52041517-1', 'kwangheum.github.io');
   ga('send', 'pageview');
 
-</script>
-</body>
-</html>
+</script></div>
+
+</body></html>
