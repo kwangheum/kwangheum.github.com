@@ -65,18 +65,18 @@
 	width:100%;
 	text-align: center;
 }
-.thumb span.month {
+.thumb span.start-date {
 	font-size:40px;
 	position:absolute;
 }
-.thumb span.day {
+.thumb span.end-date {
 	width: 100%;
 	text-align: center;
 	font-weight: 700;
-	font-size: 25px;
+	font-size: 15px;
 	text-transform: uppercase;
 	position: absolute;
-	top:45px;
+	top:55px;
 }
 
 .user-1 {
