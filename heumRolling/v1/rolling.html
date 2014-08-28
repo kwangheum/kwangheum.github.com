@@ -291,14 +291,22 @@ function createModal(id,title,contents){
 }
 </script>
 
-<link href="/resources/css/common.css" rel="stylesheet"><link href="/resources/images/favicon.ico" rel="icon" type="image/x-icon">
+<link href="/resources/css/common.css" rel="stylesheet">
+<link rel="stylesheet" href="/resources/plugin/pace/themes/black/pace-theme-loading-bar.css" type="text/css" media="screen">
+<script src="/resources/plugin/pace/pace.min.js"></script><link href="/resources/images/favicon.ico" rel="icon" type="image/x-icon">
     
 		
 		<link rel="stylesheet" href="/resources/heumplugin/heumRolling/v1/jquery.heum.rolling.css"/>
-		<script src="/resources/heumplugin/heumRolling/v1/jquery.heum.rolling.min.js"></script>
-	</head>
+		<script src="/resources/heumplugin/heumRolling/v1/jquery.heum.rolling.js"></script>
+	<script>
+	    Pace.on('hide', function(){
+	        $("#kwangheum-page").fadeIn("slow");
+	    });
+    </script>
+</head>
 <body>
-	
+	<div id="kwangheum-page" style="display: none;">
+		
 
 
 
@@ -322,6 +330,8 @@ function createModal(id,title,contents){
 var ctx = "";
 </script>
 
+
+
 <div class="kwangheum-logo hidden-xs">
 	<h1>
 		<a href="/">
@@ -338,29 +348,27 @@ var ctx = "";
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a href="/main.it" class="navbar-brand visible-xs">Web Recipes</a>
+			<a href="/" class="navbar-brand visible-xs">Web Recipes</a>
 		</div>
 		<nav class="collapse navbar-collapse bs-navbar-collapse">
 			<ul class="nav navbar-nav">
-				<li class="active">
+				<li class="">
 					<a href="/profile">profile</a>
 				</li>
-				<li class="">
+				<li class="active">
 					<a href="/heumRolling/v1/rolling">heumRolling</a>
 				</li>
 				<li class="">
-					<a href="/heumValidation/v1/validation">heumValidation</a>
+					<a href="/heumValidation/v2/validation">heumValidation</a>
 				</li>
 			</ul>
 		</nav>
 	</div>
-</header>
-
-<div class="container bs-docs-container">
-		<div class="row">
-			<div class="col-xs-12" role="main">
-				<div class="bs-docs-section">
-					
+</header><div class="container bs-docs-container">
+			<div class="row">
+				<div class="col-xs-12" role="main">
+					<div class="bs-docs-section">
+						
 		<h1 class="page-header">heumRolling</h1>
 		<p class="lead">heumRolling은 롤링할 아이템들의 넓이와 상관없이 자동으로 아이템의 넓이를 구하여 자동으로 롤링해줍니다</p>
 		<a href="https://github.com/kwangheum/heumRolling" target="_blank">파일다운로드</a>
@@ -391,7 +399,7 @@ var ctx = "";
 
 
 <script>
-	$(window).load(function(){
+	Pace.on('hide', function(){
 		$("#basic-rolling").heumRolling();
 	});
 </script>
@@ -444,7 +452,7 @@ var ctx = "";
 
 
 <script>
-	$(window).load(function(){
+	Pace.on('hide', function(){
 		$("#button-data-rolling").heumRolling();
 	});
 </script>
@@ -501,7 +509,7 @@ var ctx = "";
 
 
 <script>
-	$(window).load(function(){
+	Pace.on('hide', function(){
 		$("#button-javascript-rolling").heumRolling();
 		$("#prev").click(function(){
 			$("#button-javascript-rolling").heumRolling().prev();	
@@ -570,7 +578,7 @@ var ctx = "";
 
 
 <script>
-	$(window).load(function(){
+	Pace.on('hide', function(){
 		$("#button-option-rolling").heumRolling({
 			button : true
 		});
@@ -625,7 +633,7 @@ var ctx = "";
 
 
 <script>
-	$(window).load(function(){
+	Pace.on('hide', function(){
 		$("#button-rolling").heumRolling({
 			rolling : "prev"
 		});
@@ -680,7 +688,7 @@ var ctx = "";
 
 
 <script>
-	$(window).load(function(){
+	Pace.on('hide', function(){
 		$("#button-scroll-rolling").heumRolling({
 			scroll : "vertical"
 		});
@@ -735,7 +743,7 @@ var ctx = "";
 
 
 <script>
-	$(window).load(function(){
+	Pace.on('hide', function(){
 		$("#button-size-rolling").heumRolling({
 			groupsize : 300
 		});
@@ -790,7 +798,7 @@ var ctx = "";
 
 
 <script>
-	$(window).load(function(){
+	Pace.on('hide', function(){
 		$("#button-timer-rolling").heumRolling({
 			timer : 1
 		});
@@ -927,11 +935,11 @@ var ctx = "";
 			</table>
 		</div>
 	</div>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div style="margin-top: 150px;">
-		
+		<div style="margin-top: 150px;">
+			
 
 
 
@@ -1004,5 +1012,6 @@ var ctx = "";
   ga('send', 'pageview');
 
 </script></div>
+	</div>
 </body>
 </html>

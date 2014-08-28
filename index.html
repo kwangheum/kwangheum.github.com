@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ko"><head><script async="" src="//www.google-analytics.com/analytics.js"></script><script>
+<script>
 var ctx = "";
 </script>
-
-
+<html lang="ko">
+<head>
     <title>환영합니다 나광흠 홈페이지입니다 | KWANGHEUM</title>
     
 
@@ -31,9 +31,9 @@ var ctx = "";
 
 
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
 <link rel="stylesheet" href="/resources/plugin/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="/resources/plugin/bootstrap/3.2.0/css/docs.min.css">
@@ -44,7 +44,7 @@ var ctx = "";
 <script src="/resources/plugin/jquery/1.11.1/jquery-1.11.1.min.js"></script>
 <script src="/resources/plugin/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
-<link rel="stylesheet" href="/resources/plugin/toastr/2.0.3/toastr.min.css">
+<link rel="stylesheet" href="/resources/plugin/toastr/2.0.3/toastr.min.css" />
 <script src="/resources/plugin/toastr/2.0.3/toastr.min.js"></script>
 <link href="/resources/css/landing-page.css" rel="stylesheet">
 
@@ -291,12 +291,20 @@ function createModal(id,title,contents){
 }
 </script>
 
-<link href="/resources/css/common.css" rel="stylesheet"><link href="/resources/images/favicon.ico" rel="icon" type="image/x-icon">
+<link href="/resources/css/common.css" rel="stylesheet">
+<link rel="stylesheet" href="/resources/plugin/pace/themes/black/pace-theme-loading-bar.css" type="text/css" media="screen">
+<script src="/resources/plugin/pace/pace.min.js"></script><link href="/resources/images/favicon.ico" rel="icon" type="image/x-icon">
     
         
-    </head>
+    <script>
+	    Pace.on('hide', function(){
+	        $("#kwangheum-page").fadeIn("slow");
+	    });
+    </script>
+</head>
 <body>
-	
+	<div id="kwangheum-page" style="display: none;">
+		
     	<div class="intro-header">
 			<div class="container">
 				<div class="row">
@@ -320,7 +328,7 @@ function createModal(id,title,contents){
 									</a>
 								</li>
 								<li>
-									<a href="/heumValidation/v1/validation" class="btn btn-default btn-lg">
+									<a href="/heumValidation/v2/validation" class="btn btn-default btn-lg">
 										<span class="network-name">VALIDATION</span>
 									</a>
 								</li>
@@ -419,25 +427,25 @@ var ctx = "";
 					<li>
 						<a href="https://www.facebook.com/kwangheumOoO" class="btn btn-default btn-lg" target="_blank">
 							<span class="network-name hidden-xs">FACEBOOK</span>
-							<img class="visible-xs" src="/resources/images/button/facebook-black.png" width="20">
+							<img class="visible-xs" src="/resources/images/button/facebook-black.png" width="20"/>
 						</a>
 					</li>
 					<li>
 						<a href="https://github.com/kwangheum" class="btn btn-default btn-lg" target="_blank">
 							<span class="network-name hidden-xs">GITHUB</span>
-							<img class="visible-xs" src="/resources/images/button/github-black.png" width="20">
+							<img class="visible-xs" src="/resources/images/button/github-black.png" width="20"/>
 						</a>
 					</li>
 					<li>
 						<a href="https://kwangheum.blogspot.com" class="btn btn-default btn-lg" target="_blank">
 							<span class="network-name hidden-xs">BLOG</span>
-							<img class="visible-xs" src="/resources/images/button/blogger-black.png" width="20">
+							<img class="visible-xs" src="/resources/images/button/blogger-black.png" width="20"/>
 						</a>
 					</li>
 					<li>
 						<a href="mailto:myrkh1213@naver.com" class="btn btn-default btn-lg" title="myrkh1213@naver.com">
 							<span class="network-name hidden-xs">@</span>
-							<img class="visible-xs" src="/resources/images/button/email-black.png" width="20">
+							<img class="visible-xs" src="/resources/images/button/email-black.png" width="20"/>
 						</a>
 					</li>
 				</ul>
@@ -454,5 +462,6 @@ var ctx = "";
   ga('create', 'UA-52041517-1', 'kwangheum.github.io');
   ga('send', 'pageview');
 
-</script>
-</body></html>
+</script></div>
+</body>
+</html>
