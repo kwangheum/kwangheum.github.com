@@ -5,24 +5,6 @@
  * email : myrkh1213@gmail.com
  * hompage : http://kwangheum.blogspot.kr
 */
-$(document).ready(function(){
-	$("textarea").ckeditor({
-		toolbar : [
-     		['Cut','Copy','Paste','PasteText','PasteFromWord','Undo','Redo'],
-     		['Link','Unlink','Anchor'],
-     		['Image','Flash','Table','HorizontalRule','Smiley','SpecialChar','PageBreak'],
-     		['Maximize'],
-     		['Source'],
-     		['Bold','Italic','Underline','Strike','Subscript','Superscript','Find','Replace','SelectAll','RemoveFormat'],
-     		['Form', 'Checkbox', 'Radio','TextField', 'Textarea', 'Select', 'Button', 'ImageButton', 'HiddenField'],
-     		['NumberedList','BulletedList','-','Outdent','Indent','Blockquote'],
-     		['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
-     		['Styles','Format','Font','FontSize'],
-     		['TextColor','BGColor'],
-     		['ShowBlocks']
-     	]
-	});
-});
 (function($, window, document, undefined) {
 	var pluginName = "heumValidation", 
 		defaults = {};
@@ -217,7 +199,23 @@ $(document).ready(function(){
 			if(!element.hasClass("form-horizontal")){
 				element.addClass("form-horizontal");
 			}
-			element.find("input:visible,textarea:visible").each(function(){
+			$("textarea").ckeditor({
+				toolbar : [
+		     		['Cut','Copy','Paste','PasteText','PasteFromWord','Undo','Redo'],
+		     		['Link','Unlink','Anchor'],
+		     		['Image','Flash','Table','HorizontalRule','Smiley','SpecialChar','PageBreak'],
+		     		['Maximize'],
+		     		['Source'],
+		     		['Bold','Italic','Underline','Strike','Subscript','Superscript','Find','Replace','SelectAll','RemoveFormat'],
+		     		['Form', 'Checkbox', 'Radio','TextField', 'Textarea', 'Select', 'Button', 'ImageButton', 'HiddenField'],
+		     		['NumberedList','BulletedList','-','Outdent','Indent','Blockquote'],
+		     		['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
+		     		['Styles','Format','Font','FontSize'],
+		     		['TextColor','BGColor'],
+		     		['ShowBlocks']
+		     	]
+			});
+			element.find("input").each(function(){
 				var thisElement = $(this);
 				var label = $("<label/>",{
 					class : "col-md-2 control-label",
@@ -243,7 +241,7 @@ $(document).ready(function(){
 				});
 				if(thisElement.attr("type")!="checkbox"&&thisElement.attr("type")!="radio"){
 					thisElement.wrap(div).parent("div").append(feed,validationText,validationValue);
-					thisElement.parent("div").wrap(thisElement.is("textarea")?divGroup.css({"margin-top":"20px"}):divGroup);
+					thisElement.parent("div").wrap(divGroup);
 					if(!isEmpty(thisElement.data("heum-label"))){
 						thisElement.parents("div.heum-validation-group").prepend(label);
 					}
