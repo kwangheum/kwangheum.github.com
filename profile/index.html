@@ -584,31 +584,6 @@ var ctx = "";
 </script>
 
 
-
-<link rel="stylesheet" type="text/css" href="/resources/plugin/3DTimeline/css/style.css" />
-<script src="/resources/plugin/3DTimeline/js/modernizr.custom.63321.js"></script>
-<script>
-	$(document).ready(function(){
-		var move=false;
-		$(".timeline li").on("click touchend touchmove",function(event){
-		    if (event.type == 'touchmove'){
-		    	move = true;
-		    }else{
-		    	if(!move){
-			    	console.log(event.type);
-					event.stopPropagation();
-				    event.preventDefault();
-				    if (event.type === 'touchend'){
-				        $(this).off('click');
-				    }
-					$("input[name=tl-group]").prop("checked",false);
-					$(this).children("input[name=tl-group]").prop("checked",true);
-		    	}
-		    	move = false;
-		    }
-		});
-	});
-</script>
 <div class="container">
 	<h1 class="page-header">PORTFOLIO</h1>
 	<p class="lead">종료 날짜가 비어있는 경우 유지보수 또는 진행중인 사항입니다.</p>
