@@ -1,0 +1,54 @@
+body { 
+	color : white;
+	font-family: "Apple SD Gothic Neo", "MalgunGothic", "Malgun Gothic", 돋움, dotum,Arial,Helvetica,sans-serif;
+}
+
+.fancyboxmodal { white-space:normal; word-break: break-all;}
+
+.load_images .image_0 { background-image:url(../images/background-images/wedding_img.jpg)}
+.load_images .image_1 { background-image:url(../images/background-images/wedding_img00.jpg)}
+.load_images .image_2 { background-image:url(../images/background-images/wedding_img01.jpg)}
+.load_images .image_3 { background-image:url(../images/background-images/wedding_img02.jpg)}
+.load_images .image_4 { background-image:url(../images/background-images/wedding_img03.jpg)}
+.load_images .image_5 { background-image:url(../images/background-images/wedding_img04.jpg)}
+.load_images .image_6 { background-image:url(../images/background-images/wedding_img05.jpg)}
+.load_images .image_7 { background-image:url(../images/background-images/wedding_img06.jpg)}
+.load_images .image_8 { background-image:url(../images/background-images/wedding_img07.jpg)}
+.load_images .image_9 { background-image:url(../images/background-images/wedding_img08.jpg)}
+
+.load_images .image_10 { background-image:url(../images/background-images/wedding_img09.jpg)}
+.load_images .image_11 { background-image:url(../images/background-images/wedding_img10.jpg)}
+.load_images .image_12 { background-image:url(../images/background-images/wedding_img11.jpg)}
+.load_images .image_13 { background-image:url(../images/background-images/wedding_img12.jpg)}
+.load_images .image_14 { background-image:url(../images/background-images/wedding_img13.jpg)}
+.load_images .image_15 { background-image:url(../images/background-images/wedding_img14.jpg)}
+.load_images .image_16 { background-image:url(../images/background-images/wedding_img15.jpg)}
+.load_images .image_17 { background-image:url(../images/background-images/wedding_img16.jpg)}
+.load_images .image_18 { background-image:url(../images/background-images/wedding_img17.jpg)}
+.load_images .image_19 { background-image:url(../images/background-images/wedding_img18.jpg)}
+.load_images .image_20 { background-image:url(../images/background-images/wedding_img19.jpg)}
+
+@media screen and (max-width:700px ) { 
+.load_images .image_0 { background-image:url(../images/background-images/mwedding_img.jpg)}
+.load_images .image_1 { background-image:url(../images/background-images/mwedding_img00.jpg)}
+.load_images .image_2 { background-image:url(../images/background-images/mwedding_img01.jpg)}
+.load_images .image_3 { background-image:url(../images/background-images/mwedding_img02.jpg)}
+.load_images .image_4 { background-image:url(../images/background-images/mwedding_img03.jpg)}
+.load_images .image_5 { background-image:url(../images/background-images/mwedding_img04.jpg)}
+.load_images .image_6 { background-image:url(../images/background-images/mwedding_img05.jpg)}
+.load_images .image_7 { background-image:url(../images/background-images/mwedding_img06.jpg)}
+.load_images .image_8 { background-image:url(../images/background-images/mwedding_img07.jpg)}
+.load_images .image_9 { background-image:url(../images/background-images/mwedding_img08.jpg)}
+
+.load_images .image_10 { background-image:url(../images/background-images/mwedding_img09.jpg)}
+.load_images .image_11 { background-image:url(../images/background-images/mwedding_img10.jpg)}
+.load_images .image_12 { background-image:url(../images/background-images/mwedding_img11.jpg)}
+.load_images .image_13 { background-image:url(../images/background-images/mwedding_img12.jpg)}
+.load_images .image_14 { background-image:url(../images/background-images/mwedding_img13.jpg)}
+.load_images .image_15 { background-image:url(../images/background-images/mwedding_img14.jpg)}
+.load_images .image_16 { background-image:url(../images/background-images/mwedding_img15.jpg)}
+.load_images .image_17 { background-image:url(../images/background-images/mwedding_img16.jpg)}
+.load_images .image_18 { background-image:url(../images/background-images/mwedding_img17.jpg)}
+.load_images .image_19 { background-image:url(../images/background-images/mwedding_img18.jpg)}
+.load_images .image_20 { background-image:url(../images/background-images/mwedding_img19.jpg)}
+}

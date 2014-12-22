@@ -8,26 +8,31 @@
 	<meta name="description" content="결혼식 설명" />
 	<meta name="keywords"  content="나광흠,정자연,결혼식,사랑해" />
 	<meta name="Resource-type" content="Document" />
-	<link rel="image_src" href="./resources/img_pop01.jpg" />
+	<link rel="image_src" href="./resources/images/img_pop01.jpg" />
 	<link href="../resources/images/favicon.ico" rel="icon" type="image/x-icon">
-	<link data-turbolinks-track="true" href="./resources/js/application.css" media="all" rel="stylesheet">
-	<link data-turbolinks-track="true" href="./resources/js/wdr.css" media="all" rel="stylesheet">
-	<link data-turbolinks-track="true" href="./resources/js/base.css" media="all" rel="stylesheet">
+	<link data-turbolinks-track="true" href="./resources/css/application.css" media="all" rel="stylesheet">
+	<link data-turbolinks-track="true" href="./resources/css/wdr.css" media="all" rel="stylesheet">
+	<link data-turbolinks-track="true" href="./resources/css/base.css" media="all" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<link href="http://kwangheum.github.io/wedding/love" rel="canonical">
-	<script data-turbolinks-track="true" src="./resources/application.js"></script>
+	<script data-turbolinks-track="true" src="./resources/js/application.js"></script>
 	
 	<script src="http://openapi.map.naver.com/openapi/naverMap.naver?ver=2.0&key=4e3bfb5df25217979139b8c808a9292f"></script>
 	<!-- Add fancyBox -->
-	<link rel="stylesheet" href="./resources/jquery.fancybox.css" type="text/css" media="screen">
-	<script src="./resources/jquery.fancybox.pack.js"></script>
+	<link rel="stylesheet" href="./resources/plugin/jquery.fancybox.pack-2.1.5/jquery.fancybox.css" type="text/css" media="screen">
+	<script src="./resources/plugin/jquery.fancybox.pack-2.1.5/jquery.fancybox.pack.js"></script>
+	<script src="./resources/plugin/jquery.countdown-2.0.4/jquery.countdown.min.js"></script>
     <link rel="stylesheet" href="../resources/plugin/pace/themes/pace-theme-loading-bar.css" type="text/css" media="screen">
 	<script src="../resources/plugin/pace/pace.min.js"></script>
    
 	<!--  익스플로러 9 이하에서는 볼수 없음 알려야 함 -->
 	<script>
 	$(document).ready(function(){
+		$("#getting-started").countdown("2015/06/20", function(event) {
+			$(this).text(event.strftime('D-day %D %H:%M:%S'));
+		});
+		
 		$('a[href^="#"]').on('click',function (e) {
 			e.preventDefault();
 			var target = this.hash,
@@ -67,7 +72,6 @@
 	</script>
 	<style type="text/css">.fancybox-margin{margin-right:0px;}</style></head>
 	<body class="js">
-	
 	<!--[if lt IE 9]>
 	<script>
 		alert("죄송해요. 낮은 익스플로러 버전에서는 청첩장을 제대로 보실 수 없어요 .");
@@ -91,14 +95,14 @@
 									<h2 style="margin-bottom:0">
 										<span class="tagline"></span>
 										<span class="title">
-                                            AAAAAAAAAA
-                                            AAAAAAAAAA
+                                            두사람의 행복한 
+                                            시작에 여러분을 
+                                            초대합니다
                                         </span>
-										<span class="subtitle" style="margin-bottom:1em">(1) AAAAAAAAAAAAAAAAAAAA</span>
+										<span id="getting-started" class="subtitle" style="margin-bottom:1em"></span>
 									</h2>
 									<p style="font-size:0.9em; line-height:1.7em; margin-bottom:2.6em;">
-										AAAAAAAAAAAAAAAAAAAA
-                                        AAAAAAAAAAAAAAAAAAAA
+										2012년 <a class="fancybox-button" rel="fancybox-button_1" href="http://http://kwangheum.github.io/wedding/resorces/images/friend/kjsjune.jpg" title="김준식">김준식</a>
 									</p>
 								</div>
 								<div class="contentText">
@@ -118,7 +122,7 @@
 						</div>
 					</div>
 				</div>
-				<a class="to_top" href="http://reportage.wdr.de/gravity#content">zum Anfang</a>
+				<a class="to_top" href="http://reportage.wdr.de/gravity#content">맨위로</a>
 			</section>
 			<!-- first section 마감 --> 
 
@@ -142,8 +146,8 @@
 	  								</div>
 								<div class="contentText">
 									<p>
-                                        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-                                        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                                        안녕하세요. 신랑 나광흠 입니다 ^^
+                                        앞으로 많은
                                         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
                                         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
                                         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -168,7 +172,7 @@
 						</div>
 					</div>
 				</div>
-				<a class="to_top" href="http://reportage.wdr.de/gravity#content">zum Anfang</a>
+				<a class="to_top" href="http://reportage.wdr.de/gravity#content">맨위로</a>
 			</section>
 			<!-- intro section 마감 --> 
 
@@ -231,7 +235,7 @@
 						</div>
 					</div>
 				</div>
-				<a class="to_top" href="http://reportage.wdr.de/gravity#content">zum Anfang</a>
+				<a class="to_top" href="http://reportage.wdr.de/gravity#content">맨위로</a>
 			</section>
 			<!-- root QNA section1 마감 --> 
 			
@@ -289,7 +293,7 @@
 						</div>
 					</div>
 				</div>
-				<a class="to_top" href="http://reportage.wdr.de/gravity#content">zum Anfang</a>
+				<a class="to_top" href="http://reportage.wdr.de/gravity#content">맨위로</a>
 			</section>
 			<!-- root QNA section2 마감 --> 
 			
@@ -353,7 +357,7 @@
 						</div>
 					</div>
 				</div>
-				<a class="to_top" href="http://reportage.wdr.de/gravity#content">zum Anfang</a>
+				<a class="to_top" href="http://reportage.wdr.de/gravity#content">맨위로</a>
 			</section>
 			<!-- root QNA section3 마감 -->
 			
@@ -422,7 +426,7 @@
 						</div>
 					</div>
 				</div>
-				<a class="to_top" href="http://reportage.wdr.de/gravity#content">zum Anfang</a>
+				<a class="to_top" href="http://reportage.wdr.de/gravity#content">맨위로</a>
 			</section>
 			<!-- root QNA section4 마감 -->
 			
@@ -492,7 +496,7 @@
 						</div>
 					</div>
 				</div>
-				<a class="to_top" href="http://reportage.wdr.de/gravity#content">zum Anfang</a>
+				<a class="to_top" href="http://reportage.wdr.de/gravity#content">맨위로</a>
 			</section>
 			<!-- root QNA section5 마감 -->
 			
@@ -549,13 +553,13 @@
 										<span class="qst"><strong>Q ‾ GGGGGGGGGGGGGGGGG</strong></span>
 										<span class="asw"><strong>A ‾</strong> 
                                             GGGGGGGGGGGGGGGG
-										<a class="fancybox-button" rel="fancybox-button_1" href="http://interview.hankookilbo.com/v/fc9e7cd5900c45b082ff56d1bd5ea09b/images/slide1_ybj01.jpg" title="엄마가 시켰잖아">사진</a>
-										<a class="fancybox-button" rel="fancybox-button_1" href="http://interview.hankookilbo.com/v/fc9e7cd5900c45b082ff56d1bd5ea09b/images/slide1_ybj02.jpg" title="아 하기싫어"></a>
-										<a class="fancybox-button" rel="fancybox-button_1" href="http://interview.hankookilbo.com/v/fc9e7cd5900c45b082ff56d1bd5ea09b/images/slide1_ybj03.jpg" title="쉬는 날"></a>
-										<a class="fancybox-button" rel="fancybox-button_1" href="http://interview.hankookilbo.com/v/fc9e7cd5900c45b082ff56d1bd5ea09b/images/slide1_ybj04.jpg" title="잊지마"></a>
-										<a class="fancybox-button" rel="fancybox-button_1" href="http://interview.hankookilbo.com/v/fc9e7cd5900c45b082ff56d1bd5ea09b/images/slide1_ybj05.jpg" title="오지말랬지"></a>
-										<a class="fancybox-button" rel="fancybox-button_1" href="http://interview.hankookilbo.com/v/fc9e7cd5900c45b082ff56d1bd5ea09b/images/slide1_ybj06.jpg" title="안되면 되게 화나"></a>
-										<a class="fancybox-button" rel="fancybox-button_1" href="http://interview.hankookilbo.com/v/fc9e7cd5900c45b082ff56d1bd5ea09b/images/slide1_ybj07.jpg" title="우리집에 오지마"></a>
+											<a class="fancybox-button" rel="fancybox-button_1" href="http://interview.hankookilbo.com/v/fc9e7cd5900c45b082ff56d1bd5ea09b/images/slide1_ybj01.jpg" title="엄마가 시켰잖아">사진</a>
+											<a class="fancybox-button" rel="fancybox-button_1" href="http://interview.hankookilbo.com/v/fc9e7cd5900c45b082ff56d1bd5ea09b/images/slide1_ybj02.jpg" title="아 하기싫어"></a>
+											<a class="fancybox-button" rel="fancybox-button_1" href="http://interview.hankookilbo.com/v/fc9e7cd5900c45b082ff56d1bd5ea09b/images/slide1_ybj03.jpg" title="쉬는 날"></a>
+											<a class="fancybox-button" rel="fancybox-button_1" href="http://interview.hankookilbo.com/v/fc9e7cd5900c45b082ff56d1bd5ea09b/images/slide1_ybj04.jpg" title="잊지마"></a>
+											<a class="fancybox-button" rel="fancybox-button_1" href="http://interview.hankookilbo.com/v/fc9e7cd5900c45b082ff56d1bd5ea09b/images/slide1_ybj05.jpg" title="오지말랬지"></a>
+											<a class="fancybox-button" rel="fancybox-button_1" href="http://interview.hankookilbo.com/v/fc9e7cd5900c45b082ff56d1bd5ea09b/images/slide1_ybj06.jpg" title="안되면 되게 화나"></a>
+											<a class="fancybox-button" rel="fancybox-button_1" href="http://interview.hankookilbo.com/v/fc9e7cd5900c45b082ff56d1bd5ea09b/images/slide1_ybj07.jpg" title="우리집에 오지마"></a>
 										</span>
 									</p>
 								</div>
@@ -563,7 +567,7 @@
 						</div>
 					</div>
 				</div>
-				<a class="to_top" href="http://reportage.wdr.de/gravity#content">zum Anfang</a>
+				<a class="to_top" href="http://reportage.wdr.de/gravity#content">맨위로</a>
 			</section>
 			<!-- root QNA section6 마감 -->
 			
@@ -607,7 +611,7 @@
 						</div>
 					</div>
 				</div>
-				<a class="to_top" href="http://reportage.wdr.de/gravity#content">zum Anfang</a>
+				<a class="to_top" href="http://reportage.wdr.de/gravity#content">맨위로</a>
 			</section>
 			<!-- root QNA section7 마감 -->
 			
@@ -650,7 +654,8 @@
 										<span class="qst"><strong>Q ‾ IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII</strong></span>
 										<span class="asw">
                                             <strong>A ‾</strong>
-                                            <a href="http://kwangheum.github.io/wedding/love/#ex1" class="fancybox">사진</a>
+                                            GGGGGGGGGGGGGGGG
+											<a class="fancybox-button" rel="fancybox-button_1" href="http://interview.hankookilbo.com/v/fc9e7cd5900c45b082ff56d1bd5ea09b/images/slide1_ybj01.jpg" title="엄마가 시켰잖아">사진</a>
                                             IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
                                             IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
                                             IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
@@ -666,7 +671,7 @@
 						</div>
 					</div>
 				</div>
-				<a class="to_top" href="http://reportage.wdr.de/gravity#content">zum Anfang</a>
+				<a class="to_top" href="http://reportage.wdr.de/gravity#content">맨위로</a>
 			</section>
 			<!-- root QNA section8 마감 -->
 
@@ -696,7 +701,7 @@
 					</div>
 				</div>
 			</div>
-			<a class="to_top" href="http://reportage.wdr.de/gravity#content">zum Anfang</a>
+			<a class="to_top" href="http://reportage.wdr.de/gravity#content">맨위로</a>
 		</section>
 		<!-- root QNA section9 마감 -->
 		
@@ -711,10 +716,10 @@
 			<div class="content">
 			<div id="aid_map"></div>
 				<div style="position: fixed;right: 0;bottom:0;margin-bottom: 20px;">
-					<a href="#10"><img src="./resources/arrow-up.png"/></a>
+					<a href="#10"><img src="./resources/images/arrow-up.png"/></a>
 				</div>
 			</div>
-			<a class="to_top" href="http://reportage.wdr.de/gravity#content">zum Anfang</a>
+			<a class="to_top" href="http://reportage.wdr.de/gravity#content">맨위로</a>
 		</section>
 		<!-- root QNA section10 마감 -->
 
@@ -728,21 +733,21 @@
 						<a class="share facebook" href="javascript:share_facebook('나광흠♥정자연 결혼식에 초대합니다','http%3A%2F%2Fkwangheum.github.io%2Fwedding%2Flove')" tabindex="3">
 							<span class="hint">페이스북 공유</span>
 							<span class="share_facebook button"></span>
-							<img src="./resources/btn_fb.png" width="32">
+							<img src="./resources/images/btn_fb.png" width="32">
 						</a>
 					</li>
 					<li style="padding:4px;">
 						<a class="share twitter" href="javascript:share_twitter('나광흠♥정자연 결혼식에 초대합니다','http%3A%2F%2Fkwangheum.github.io%2Fwedding%2Flove')" tabindex="3">
 							<span class="hint">트위터 공유</span>
 							<span class="share_twitter button"></span>
-							<img src="./resources/btn_tw.png" width="32">
+							<img src="./resources/images/btn_tw.png" width="32">
 						</a>		  
 					</li>
 					<li style="padding:4px;">
 						<a class="share twitter" href="#" id="kakao-link-btn" tabindex="3">
 							<span class="hint">카카오톡 공유</span>
 							<span class="share_twitter button"></span>
-							<img src="./resources/btn_kt.png" width="32">
+							<img src="./resources/images/btn_kt.png" width="32">
 						</a>		  
 					</li>
 				</ul>
