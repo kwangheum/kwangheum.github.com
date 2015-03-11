@@ -779,7 +779,7 @@
 		$("#kakao-link-btn").parent("li").remove();
 	}
 	function share_facebook(msg,url){
-		var href = "http://www.facebook.com/sharer.php?u=" + url + "&t=" + encodeURIComponent(msg);
+		var href = "https://www.facebook.com/sharer/sharer.php?u=" + url + "&t=" + encodeURIComponent(msg);
 		var a = window.open(href, 'facebook' );
 		if ( a ) {
 			a.focus();
