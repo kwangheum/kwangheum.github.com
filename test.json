@@ -1,8 +1,0 @@
-{
-    title:"모바일산업 통합정보 포털 구축 용역",
-    start:"2013.2.21",
-    end:"2013.2.26",
-    os:"UNIX",
-    db:"Sybase",
-    server:"apache, tomcat"
-}
