@@ -1,4 +1,4 @@
-{portfolio:[{
+[{
     company:"(주)유진정보",
     title:"모바일산업 통합정보 포털 구축 용역",
     start:"2013년 1월 2일",
@@ -126,4 +126,4 @@
     language:"spring2.5<br/>spring security2.0<br/>ibatis<br/>jquery(etc)",
     site:"http://performance.iitp.kr",
     photo:"http://kwangheum.github.io/resources/images/profile/performance.iitp.kr.png"
-}]}
+}]
