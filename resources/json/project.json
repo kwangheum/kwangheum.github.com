@@ -29,8 +29,8 @@
     db:"Tibero",
     server:"apache,tomcat",
     language:"spring3.2<br/>spring security3.1<br/>mybatis<br/>jquery(etc)",
-    site:"http://kse.nipa.kr",
-    photo:"http://kwangheum.github.io/resources/images/profile/kse.nipa.kr.png",
+    site:"http://iitp.kr",
+    photo:"http://kwangheum.github.io/resources/images/profile/iitp.kr.png",
     description:"반응형 웹"
 },{
     company:"(주)유진정보",
