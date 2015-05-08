@@ -3,10 +3,10 @@
     title:"ICT R&D 인터넷 성과관 구축 및 홈페이지 고도화",
     start:"2014년 11월 4일",
     end:"2015년 4월 13일",
-    os:"SunOS eva 5.10",
-    db:"Oracle",
-    server:"jeus,WebtoB",
-    language:"spring2.5<br/>spring security2.0<br/>ibatis<br/>jquery(etc)",
+    os:"CentOS 6.5",
+    db:"Tibero",
+    server:"apache,tomcat",
+    language:"spring3.2<br/>mybatis<br/>jquery(etc)",
     site:"http://performance.iitp.kr",
     photo:"http://kwangheum.github.io/resources/images/profile/performance.iitp.kr.png"
 },{
