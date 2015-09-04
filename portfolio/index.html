@@ -154,6 +154,7 @@ MOMM@BMOO8OGO88GOG8ZOGGZOEOZ8ZGGGZOMBEE0G0G0GEGZGEGE8E8EOB7         .OGkXkqkXXqk
 		<script src="./js/skel.min.js"></script>
 		<script src="./js/skel-layers.min.js"></script>
 		<script src="./js/init.js"></script>
+        <link rel="icon" type="image/x-icon" href="http://kwangheum.github.io/resources/images/favicon.ico">
 		<noscript>
 			<link rel="stylesheet" href="./css/skel.css" />
 			<link rel="stylesheet" href="./css/style.css" />
@@ -184,25 +185,7 @@ MOMM@BMOO8OGO88GOG8ZOGGZOEOZ8ZGGGZOMBEE0G0G0GEGZGEGE8E8EOB7         .OGkXkqkXXqk
 									'</div>'+
 								'</article>'	
 		       				);
-		       			})
-		       			/* 
-		       			for(var i=0;i<3;i++){
-		       				$("#portfolio-list").append(
-	       						'<article>'+
-									'<a href="#" class="image"><img src="'+res[i].photo+'" alt="" /></a>'+
-									'<div class="inner">'+
-										'<h4>'+res[i].title+'</h4>'+
-										'<div>SITE : <a href="'+res[i].site+'">'+res[i].site+'</a></div>'+
-										'<div>DATE : '+res[i].start+' ~ '+res[i].end+'</div>'+
-										'<div>OS : '+res[i].os+'</div>'+
-										'<div>SERVER : '+res[i].server+'</div>'+
-										'<div>LANGUAGE : </div>'+
-										'<div style="padding:0 10px 0 10px">'+res[i].language+'</div>'+
-									'</div>'+
-								'</article>'	
-		       				);
-		       			}
-		       			 */
+		       			});
 		       		},
 		       		error: function(data){
 		       			console.log("실패");
@@ -214,88 +197,76 @@ MOMM@BMOO8OGO88GOG8ZOGGZOEOZ8ZGGGZOMBEE0G0G0GEGZGEGE8E8EOB7         .OGkXkqkXXqk
 	</head>
 	<body>
 		<div id="wrapper">
-
-			<!-- Header -->
-				<section id="header" class="skel-layers-fixed">
-					<header>
-						<span class="image avatar"><img src="./images/photo.jpg" alt="" /></span>
-						<h1 id="logo"><a href="#">Kwangheum, Na</a></h1>
-						<p>
-							Start Web Programmer
-							<br/>
-							2012.9.19
-						</p>
-					</header>
-					<nav id="nav">
-						<ul>
-							<li><a href="#one" class="active">About</a></li>
-							<li><a href="#two">Things I Can Do</a></li>
-							<li><a href="#three">Portfolio</a></li>
-						</ul>
-					</nav>
-					<footer>
-						<ul class="icons">
-							<li><a href="https://www.facebook.com/kwangheumOoO" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="https://instagram.com/kwangheum" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="https://github.com/kwangheum" class="icon fa-github"><span class="label">Github</span></a></li>
-							<li><a href="mailto:myrkh1213@naver.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-					</footer>
-				</section>
-
-			<!-- Main -->
-				<div id="main">
-
-					<!-- One -->
-						<section id="one">
-							<div class="container">
-								<header class="major">
-									<h2>About</h2>
-									<p>
-										안녕하세요. 웹프로그래머 나광흠입니다.<br/>
-									</p>
-								</header>
-								<p>
-									웹 프로그래머에 도전을 시작은 2012년 9월에 시작을 하였습니다. <br/>
-									만약 제가 모르는 언어가 있다할 지라도 그 언어는 배우면 된다고 생각합니다. <br/>
-									모르는건 죄가아니지만 하지않는건 죄라고 생각하며 살고있습니다. <br/> 
-								</p>
-							</div>
-						</section>
-
-					<!-- Two -->
-						<section id="two">
-							<div class="container">
-								<h3>Things I Can Do</h3>
-								<p></p>
-								<ul class="feature-icons">
-									<li class="fa-code">JSP</li>
-									<li class="fa-database">Oracle, Tibero, Sybase, Mysql</li>
-									<li class="fa-book">Javascript, Jquery</li>
-									<li class="fa-space-shuttle">iBATIS, MyBatis</li>
-									<li class="fa-bolt">Spring Framework</li>
-									<li class="fa-mobile">Responsive Web</li>
-								</ul>
-							</div>
-						</section>
-
-					<!-- Three -->
-						<section id="three">
-							<div class="container">
-								<h3>Portfolio</h3>
-								<div id="portfolio-list" class="features"></div>
-							</div>
-						</section>
-				</div>
-
-			<!-- Footer -->
-				<section id="footer">
-					<div class="container">
-						<ul class="copyright">
-							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</div>
-				</section>
+            <section id="header" class="skel-layers-fixed">
+                <header>
+                    <span class="image avatar"><img src="./images/photo.jpg" alt="" /></span>
+                    <h1 id="logo"><a href="http://kwangheum.github.io">Kwangheum, Na</a></h1>
+                    <p>
+                        Start Web Programmer
+                        <br/>
+                        2012.9.19
+                    </p>
+                </header>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#one" class="active">About</a></li>
+                        <li><a href="#two">Things I Can Do</a></li>
+                        <li><a href="#three">Portfolio</a></li>
+                    </ul>
+                </nav>
+                <footer>
+                    <ul class="icons">
+                        <li><a href="https://www.facebook.com/kwangheumOoO" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                        <li><a href="https://instagram.com/kwangheum" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="https://github.com/kwangheum" class="icon fa-github"><span class="label">Github</span></a></li>
+                        <li><a href="mailto:myrkh1213@naver.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+                    </ul>
+                </footer>
+            </section>
+            <div id="main">
+                    <section id="one">
+                        <div class="container">
+                            <header class="major">
+                                <h2>About</h2>
+                                <p>
+                                    안녕하세요. 웹프로그래머 나광흠입니다.<br/>
+                                </p>
+                            </header>
+                            <p>
+                                웹 프로그래머에 도전을 시작은 2012년 9월에 시작을 하였습니다. <br/>
+                                만약 제가 모르는 언어가 있다할 지라도 그 언어는 배우면 된다고 생각합니다. <br/>
+                                모르는건 죄가아니지만 하지않는건 죄라고 생각하며 살고있습니다. <br/> 
+                            </p>
+                        </div>
+                    </section>
+                    <section id="two">
+                        <div class="container">
+                            <h3>Things I Can Do</h3>
+                            <p></p>
+                            <ul class="feature-icons">
+                                <li class="fa-code">JSP</li>
+                                <li class="fa-database">Oracle, Tibero, Sybase, Mysql</li>
+                                <li class="fa-book">Javascript, Jquery</li>
+                                <li class="fa-space-shuttle">iBATIS, MyBatis</li>
+                                <li class="fa-bolt">Spring Framework</li>
+                                <li class="fa-mobile">Responsive Web</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="three">
+                        <div class="container">
+                            <h3>Portfolio</h3>
+                            <div id="portfolio-list" class="features"></div>
+                        </div>
+                    </section>
+            </div>
+            <section id="footer">
+                <div class="container">
+                    <ul class="copyright">
+                        <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    </ul>
+                </div>
+            </section>
 		</div>
 	</body>
 </html>

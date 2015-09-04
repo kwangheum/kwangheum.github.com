@@ -7,7 +7,7 @@
 	db: "kairos",
 	server: "tomcat",
 	language: "spring3.2<br/>mybatis<br/>jquery(etc)",
-	site: "http://sop.kostat.go.kr",
+	site: "http://sop.kostat.go.kr/mobile",
 	photo: "http://kwangheum.github.io/resources/images/profile/sop.kostat.go.kr.png"
 }, {
 	company: "(주)유진정보",
