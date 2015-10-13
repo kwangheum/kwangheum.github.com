@@ -3,7 +3,7 @@
 	title: "SGIS",
 	start: "2015년 7월 1일",
 	end: "",
-	os: “AIX”,
+	os: "AIX",
 	db: "kairos",
 	server: "jeus,WebtoB",
 	language: "spring3.2<br/>mybatis<br/>jquery(etc)",
