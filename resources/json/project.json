@@ -1,14 +1,14 @@
 [{
 	company: "(주)유코아시스템",
-	title: "SGIS",
+	title: "SGIS 오픈 플랫폼 구축 2단계",
 	start: "2015년 7월 1일",
 	end: "",
 	os: "AIX",
 	db: "kairos",
 	server: "jeus,WebtoB",
 	language: "spring3.2<br/>mybatis<br/>jquery(etc)",
-	site: "http://sop.kostat.go.kr/mobile",
-	photo: "http://kwangheum.github.io/resources/images/profile/sop.kostat.go.kr.png"
+	site: "http://sgis.kostat.go.kr",
+	photo: "http://kwangheum.github.io/resources/images/profile/sgis.kostat.go.kr.png"
 }, {
 	company: "(주)유진정보",
 	title: "ICT R&D 인터넷 성과관 구축 및 홈페이지 고도화",
