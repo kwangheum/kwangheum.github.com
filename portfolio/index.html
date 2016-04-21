@@ -164,24 +164,24 @@ MOMM@BMOO8OGO88GOG8ZOGGZOEOZ8ZGGGZOMBEE0G0G0GEGZGEGE8E8EOB7         .OGkXkqkXXqk
 		<script>
 			$(window).load(function(){
 				$.ajax({
-		       		url: "http://kwangheum.github.io/resources/json/project.json",
+		       		url: "http://kwangheum.com/json/portfolio.heum",
 		       		type:"GET",
 		       		async: false,
-		       		dataType:"text",
-		       		success: function(data){
-		       			var res = eval(data);
-		       			$.each(res,function(cnt,node){
+		       		dataType:"json",
+		       		success: function(res){
+		       			$.each(res.result,function(cnt,node){
+		       				var imagePath = node.newFilePath.substring(0,node.newFilePath.indexOf("/"));
+		       				var image = node.newFilePath.substring(node.newFilePath.indexOf("/")+1);
 		       				$("#portfolio-list").append(
 	       						'<article>'+
-									'<a href="'+node.photo+'" class="image" target="_blank"><img src="'+node.photo+'" alt="" /></a>'+
+									'<a href="http://kwangheum.com/portfolio.heum?id='+node.id+'" class="image" target="_blank"><img src="http://kwangheum.com/upload/'+imagePath+'/thumbnail/thumbnail-L-'+image+'" alt="" /></a>'+
 									'<div class="inner">'+
 										'<h4>'+node.title+'</h4>'+
-										'<div>SITE : <a href="'+node.site+'">'+node.site+'</a></div>'+
-										'<div>DATE : '+node.start+' ~ '+node.end+'</div>'+
+										'<div>SITE : <a href="'+node.url+'">'+node.url+'</a></div>'+
+										'<div>DATE : '+node.start+' ~ '+(node.end?node.end:'')+'</div>'+
 										'<div>OS : '+node.os+'</div>'+
-										'<div>SERVER : '+node.server+'</div>'+
-										'<div>LANGUAGE : </div>'+
-										'<div style="padding:0 10px 0 10px">'+node.language+'</div>'+
+										(node.webserver?'<div>WEB SERVER : '+node.webserver+'</div>':'')+
+										'<div>WAS SERVER : '+node.wasserver+'</div>'+
 									'</div>'+
 								'</article>'	
 		       				);
