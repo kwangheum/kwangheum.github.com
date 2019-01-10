@@ -18,16 +18,10 @@
 		"update_ip": "119.204.115.219",
 		"update_date": "2018-09-29",
 		"framework": [{
-			"id": "274",
-			"portfolio": "14",
-			"type": "0",
-			"text": "spring security",
-			"order": "6"
-		}, {
 			"id": "273",
 			"portfolio": "14",
 			"type": "0",
-			"text": "yellow tutle mobius",
+			"text": "spring security",
 			"order": "5"
 		}, {
 			"id": "272",
