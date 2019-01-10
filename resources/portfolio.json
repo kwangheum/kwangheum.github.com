@@ -1,0 +1,1107 @@
+{
+	"result": [{
+		"id": "14",
+		"ordering_organization": "한국철도기술연구원 ",
+		"company": "(주)유코아시스템",
+		"title": "ICT기반 스마트역사 건설방안 연구용역",
+		"start": "2017-05-01",
+		"end": "2017-12-29",
+		"os": "CentOS 7.0",
+		"database": "Oracle",
+		"webserver": "apache",
+		"wasserver": "tomcat",
+		"url": "연구과제",
+		"newFilePath": "http://kwangheum.com/resources/images/portfolio/www.railportal.kr-smart-station.png",
+		"register": "1",
+		"register_ip": "127.0.0.1",
+		"register_date": "2018-07-24",
+		"update_ip": "119.204.115.219",
+		"update_date": "2018-09-29",
+		"framework": [{
+			"id": "274",
+			"portfolio": "14",
+			"type": "0",
+			"text": "spring security",
+			"order": "6"
+		}, {
+			"id": "273",
+			"portfolio": "14",
+			"type": "0",
+			"text": "yellow tutle mobius",
+			"order": "5"
+		}, {
+			"id": "272",
+			"portfolio": "14",
+			"type": "0",
+			"text": "spring framework",
+			"order": "4"
+		}, {
+			"id": "271",
+			"portfolio": "14",
+			"type": "0",
+			"text": "node.js",
+			"order": "3"
+		}, {
+			"id": "270",
+			"portfolio": "14",
+			"type": "0",
+			"text": "mqtt",
+			"order": "2"
+		}, {
+			"id": "269",
+			"portfolio": "14",
+			"type": "0",
+			"text": "yellow tutle mobius",
+			"order": "1"
+		}, {
+			"id": "268",
+			"portfolio": "14",
+			"type": "0",
+			"text": "java",
+			"order": "0"
+		}],
+		"description": [{
+			"id": "278",
+			"portfolio": "14",
+			"type": "1",
+			"text": "oneM2M 표준",
+			"order": "3"
+		}, {
+			"id": "277",
+			"portfolio": "14",
+			"type": "1",
+			"text": "LoRA칩을 활용한 데이터 수집",
+			"order": "2"
+		}, {
+			"id": "276",
+			"portfolio": "14",
+			"type": "1",
+			"text": "Mqtt를 활용한 IoT 데이터 수집",
+			"order": "1"
+		}, {
+			"id": "275",
+			"portfolio": "14",
+			"type": "1",
+			"text": "yellow turtle mobius 를 이용한 IoT 기기관리 페이지 개발",
+			"order": "0"
+		}]
+	}, {
+		"id": "15",
+		"ordering_organization": "국토교통과학기술진흥원",
+		"company": "(주)유코아시스템",
+		"title": "ICT기반 철도 이용객 정보 제공기술 개발",
+		"start": "2017-05-01",
+		"end": "2018-07-06",
+		"os": "RedHat",
+		"database": "Oracle",
+		"webserver": "apache",
+		"wasserver": "jboss",
+		"url": "http://www.railportal.kr",
+		"newFilePath": "http://kwangheum.com/resources/images/portfolio/www.railportal.kr.png",
+		"register": "1",
+		"register_ip": "127.0.0.1",
+		"register_date": "2018-07-24",
+		"update_ip": "119.204.115.219",
+		"update_date": "2018-09-29",
+		"framework": [{
+			"id": "284",
+			"portfolio": "15",
+			"type": "0",
+			"text": "websocket",
+			"order": "5"
+		}, {
+			"id": "283",
+			"portfolio": "15",
+			"type": "0",
+			"text": "spring security",
+			"order": "4"
+		}, {
+			"id": "282",
+			"portfolio": "15",
+			"type": "0",
+			"text": "spring framework",
+			"order": "3"
+		}, {
+			"id": "281",
+			"portfolio": "15",
+			"type": "0",
+			"text": "mybatis",
+			"order": "2"
+		}, {
+			"id": "280",
+			"portfolio": "15",
+			"type": "0",
+			"text": " jquery(etc)",
+			"order": "1"
+		}, {
+			"id": "279",
+			"portfolio": "15",
+			"type": "0",
+			"text": "java",
+			"order": "0"
+		}],
+		"description": [{
+			"id": "294",
+			"portfolio": "15",
+			"type": "1",
+			"text": "역사 온습도 수집 하여 websocket으로 실시간 데이터 주고 받는 페이지 개발",
+			"order": "9"
+		}, {
+			"id": "293",
+			"portfolio": "15",
+			"type": "1",
+			"text": "railportal 메인 홈페이지 개발",
+			"order": "8"
+		}, {
+			"id": "292",
+			"portfolio": "15",
+			"type": "1",
+			"text": "역사 데이터 통계 페이지 개발",
+			"order": "7"
+		}, {
+			"id": "291",
+			"portfolio": "15",
+			"type": "1",
+			"text": "수도권 1~9호선 엘리베이터,에스컬레이터,휠체어리프트,무빙워크를 크롤링으로 데이터 수집 개발",
+			"order": "6"
+		}, {
+			"id": "290",
+			"portfolio": "15",
+			"type": "1",
+			"text": "지하철 길찾기 알고리즘 개발",
+			"order": "5"
+		}, {
+			"id": "289",
+			"portfolio": "15",
+			"type": "1",
+			"text": "역사 관련 데이터 OpenAPI 개발",
+			"order": "4"
+		}, {
+			"id": "288",
+			"portfolio": "15",
+			"type": "1",
+			"text": "게시판 관리 개발",
+			"order": "3"
+		}, {
+			"id": "287",
+			"portfolio": "15",
+			"type": "1",
+			"text": "데이터 이관 페이지 개발",
+			"order": "2"
+		}, {
+			"id": "286",
+			"portfolio": "15",
+			"type": "1",
+			"text": "관리 시스템 페이지 개발",
+			"order": "1"
+		}, {
+			"id": "285",
+			"portfolio": "15",
+			"type": "1",
+			"text": "역사 관련 정적데이터 수집 시스템 개발",
+			"order": "0"
+		}]
+	}, {
+		"id": "13",
+		"ordering_organization": "통계청",
+		"company": "(주)유코아시스템",
+		"title": "SGIS 오픈 플랫폼 구축 3단계 사업",
+		"start": "2016-04-30",
+		"end": "2017-04-30",
+		"os": "AIX",
+		"database": "kairos",
+		"webserver": "WebtoB",
+		"wasserver": "jeus",
+		"url": "http://sgis.kostat.go.kr",
+		"newFilePath": "http://kwangheum.com/resources/images/portfolio/sgis.kostat.go.kr.png",
+		"register": "1",
+		"register_ip": "175.203.126.79",
+		"register_date": "2016-05-23",
+		"update_ip": "112.218.116.51",
+		"update_date": "2018-08-07",
+		"framework": [{
+			"id": "253",
+			"portfolio": "13",
+			"type": "0",
+			"text": "spring security",
+			"order": "3"
+		}, {
+			"id": "252",
+			"portfolio": "13",
+			"type": "0",
+			"text": "spring framework",
+			"order": "2"
+		}, {
+			"id": "251",
+			"portfolio": "13",
+			"type": "0",
+			"text": "mybatis",
+			"order": "1"
+		}, {
+			"id": "250",
+			"portfolio": "13",
+			"type": "0",
+			"text": "jquery(etc)",
+			"order": "0"
+		}],
+		"description": [{
+			"id": "256",
+			"portfolio": "13",
+			"type": "1",
+			"text": "살고싶은 우리동네 고도화",
+			"order": "2"
+		}, {
+			"id": "255",
+			"portfolio": "13",
+			"type": "1",
+			"text": "통계커뮤니티맵 고도화",
+			"order": "1"
+		}, {
+			"id": "254",
+			"portfolio": "13",
+			"type": "1",
+			"text": "모바일 Frond end,Back end 공통 모듈 개발",
+			"order": "0"
+		}]
+	}, {
+		"id": "12",
+		"ordering_organization": "통계청",
+		"company": "(주)유코아시스템",
+		"title": "SGIS 오픈 플랫폼 구축 2단계 사업",
+		"start": "2015-07-01",
+		"end": "2016-04-29",
+		"os": "AIX",
+		"database": "kairos",
+		"webserver": "WebtoB",
+		"wasserver": "jeus",
+		"url": "http://sgis.kostat.go.kr",
+		"newFilePath": "http://kwangheum.com/resources/images/portfolio/sgis.kostat.go.kr.png",
+		"register": "1",
+		"register_ip": "127.0.0.1",
+		"register_date": "2015-09-23",
+		"update_ip": "175.203.126.79",
+		"update_date": "2016-08-04",
+		"framework": [{
+			"id": "215",
+			"portfolio": "12",
+			"type": "0",
+			"text": "jquery(etc)",
+			"order": "2"
+		}, {
+			"id": "214",
+			"portfolio": "12",
+			"type": "0",
+			"text": "mybatis",
+			"order": "1"
+		}, {
+			"id": "213",
+			"portfolio": "12",
+			"type": "0",
+			"text": "spring framework",
+			"order": "0"
+		}],
+		"description": [{
+			"id": "218",
+			"portfolio": "12",
+			"type": "1",
+			"text": "모바일 사이트 개발",
+			"order": "2"
+		}, {
+			"id": "217",
+			"portfolio": "12",
+			"type": "1",
+			"text": "통계 커뮤니티맵 개발",
+			"order": "1"
+		}, {
+			"id": "216",
+			"portfolio": "12",
+			"type": "1",
+			"text": "살고싶은우리동네 개발",
+			"order": "0"
+		}]
+	}, {
+		"id": "11",
+		"ordering_organization": "정보통신산업진흥원",
+		"company": "(주)유진정보",
+		"title": "ICT R\u0026D 인터넷 성과관 구축 및 홈페이지 고도화",
+		"start": "2014-11-04",
+		"end": "2015-04-13",
+		"os": "CentOS 6.5",
+		"database": "Tibero",
+		"webserver": "apache",
+		"wasserver": "tomcat",
+		"url": "http://performance.iitp.kr",
+		"newFilePath": "http://kwangheum.com/resources/images/portfolio/performance.iitp.kr.png",
+		"register": "1",
+		"register_ip": "127.0.0.1",
+		"register_date": "2015-09-23",
+		"update_ip": "118.42.94.159",
+		"update_date": "2016-08-04",
+		"framework": [{
+			"id": "115",
+			"portfolio": "11",
+			"type": "0",
+			"text": "jquery(etc)",
+			"order": "2"
+		}, {
+			"id": "114",
+			"portfolio": "11",
+			"type": "0",
+			"text": "mybatis",
+			"order": "1"
+		}, {
+			"id": "113",
+			"portfolio": "11",
+			"type": "0",
+			"text": "spring framework",
+			"order": "0"
+		}],
+		"description": [{
+			"id": "119",
+			"portfolio": "11",
+			"type": "1",
+			"text": "성과 검색 기능 Back end, Front end 개발",
+			"order": "3"
+		}, {
+			"id": "118",
+			"portfolio": "11",
+			"type": "1",
+			"text": "과제 검색 기능 Back end, Front end 개발",
+			"order": "2"
+		}, {
+			"id": "117",
+			"portfolio": "11",
+			"type": "1",
+			"text": "공통 서비스 기능 Back end 개발",
+			"order": "1"
+		}, {
+			"id": "116",
+			"portfolio": "11",
+			"type": "1",
+			"text": "프레임웍 결정",
+			"order": "0"
+		}]
+	}, {
+		"id": "10",
+		"ordering_organization": "정보통신산업진흥원",
+		"company": "(주)유진정보",
+		"title": "퇴직전문가 파견지원시스템 기능 개선 및 추가 개발",
+		"start": "2014-06-03",
+		"end": "2014-07-24",
+		"os": "SunOS eva 5.10",
+		"database": "Oracle",
+		"webserver": "WebtoB",
+		"wasserver": "jeus",
+		"url": "http://kse.nipa.kr",
+		"newFilePath": "http://kwangheum.com/resources/images/portfolio/kse.nipa.kr.png",
+		"register": "1",
+		"register_ip": "127.0.0.1",
+		"register_date": "2015-09-23",
+		"update_ip": "118.42.94.159",
+		"update_date": "2016-08-04",
+		"framework": [{
+			"id": "123",
+			"portfolio": "10",
+			"type": "0",
+			"text": "jquery(etc)",
+			"order": "3"
+		}, {
+			"id": "122",
+			"portfolio": "10",
+			"type": "0",
+			"text": "ibatis",
+			"order": "2"
+		}, {
+			"id": "121",
+			"portfolio": "10",
+			"type": "0",
+			"text": "spring security",
+			"order": "1"
+		}, {
+			"id": "120",
+			"portfolio": "10",
+			"type": "0",
+			"text": "spring framework",
+			"order": "0"
+		}],
+		"description": [{
+			"id": "126",
+			"portfolio": "10",
+			"type": "1",
+			"text": "휴가신청관리 기능 수정",
+			"order": "2"
+		}, {
+			"id": "125",
+			"portfolio": "10",
+			"type": "1",
+			"text": "국가 및 분야관리 기능 Back end, Front end 개발",
+			"order": "1"
+		}, {
+			"id": "124",
+			"portfolio": "10",
+			"type": "1",
+			"text": "엑셀 다운로드 기능 Back end, Front end 개발",
+			"order": "0"
+		}]
+	}, {
+		"id": "9",
+		"ordering_organization": "정보통신산업진흥원",
+		"company": "(주)유진정보",
+		"title": "정보통신 기술진흥 센터",
+		"start": "2014-05-19",
+		"end": "2014-07-24",
+		"os": "CentOS 6.5",
+		"database": "Tibero",
+		"webserver": "apache",
+		"wasserver": "tomcat",
+		"url": "http://iitp.kr",
+		"newFilePath": "http://kwangheum.com/resources/images/portfolio/iitp.kr.png",
+		"register": "1",
+		"register_ip": "127.0.0.1",
+		"register_date": "2015-09-23",
+		"update_ip": "118.42.94.159",
+		"update_date": "2016-08-04",
+		"framework": [{
+			"id": "130",
+			"portfolio": "9",
+			"type": "0",
+			"text": "jquery(etc)",
+			"order": "3"
+		}, {
+			"id": "129",
+			"portfolio": "9",
+			"type": "0",
+			"text": "mybatis",
+			"order": "2"
+		}, {
+			"id": "128",
+			"portfolio": "9",
+			"type": "0",
+			"text": "spring security",
+			"order": "1"
+		}, {
+			"id": "127",
+			"portfolio": "9",
+			"type": "0",
+			"text": "spring framework",
+			"order": "0"
+		}],
+		"description": [{
+			"id": "140",
+			"portfolio": "9",
+			"type": "1",
+			"text": "Facebook API를 사용한 게시 글 연동 기능 개발",
+			"order": "9"
+		}, {
+			"id": "139",
+			"portfolio": "9",
+			"type": "1",
+			"text": "방문자 및 게시판 통계 기능 Back end, Front end개발",
+			"order": "8"
+		}, {
+			"id": "138",
+			"portfolio": "9",
+			"type": "1",
+			"text": "권한관리 기능 Back end, Front end개발",
+			"order": "7"
+		}, {
+			"id": "137",
+			"portfolio": "9",
+			"type": "1",
+			"text": "전체사업구조도관리 기능 Back end, Front end개발",
+			"order": "6"
+		}, {
+			"id": "136",
+			"portfolio": "9",
+			"type": "1",
+			"text": "행사관리 기능 Back end, Front end개발",
+			"order": "5"
+		}, {
+			"id": "135",
+			"portfolio": "9",
+			"type": "1",
+			"text": "공시송달관리 기능 Back end, Front end개발",
+			"order": "4"
+		}, {
+			"id": "134",
+			"portfolio": "9",
+			"type": "1",
+			"text": "메뉴관리 기능 Back end, Front end개발",
+			"order": "3"
+		}, {
+			"id": "133",
+			"portfolio": "9",
+			"type": "1",
+			"text": "배너관리 기능 Back end, Front end개발",
+			"order": "2"
+		}, {
+			"id": "132",
+			"portfolio": "9",
+			"type": "1",
+			"text": "조직도관리 기능 Back end, Front end개발",
+			"order": "1"
+		}, {
+			"id": "131",
+			"portfolio": "9",
+			"type": "1",
+			"text": "프레임웍 결정 및 프로젝트 셋팅",
+			"order": "0"
+		}]
+	}, {
+		"id": "8",
+		"ordering_organization": "정보통신산업진흥원",
+		"company": "(주)유진정보",
+		"title": "ICT정보 통합 플랫폼 구축사업",
+		"start": "2014-04-01",
+		"end": "2014-07-24",
+		"os": "UNIX",
+		"database": "Sybase",
+		"webserver": "apache",
+		"wasserver": "tomcat",
+		"url": "http://mymaker.nipa.kr",
+		"newFilePath": "http://kwangheum.com/resources/images/portfolio/mymaker.nipa.kr.png",
+		"register": "1",
+		"register_ip": "127.0.0.1",
+		"register_date": "2015-09-23",
+		"update_ip": "118.42.94.159",
+		"update_date": "2016-08-04",
+		"framework": [{
+			"id": "144",
+			"portfolio": "8",
+			"type": "0",
+			"text": "jquery(etc)",
+			"order": "3"
+		}, {
+			"id": "143",
+			"portfolio": "8",
+			"type": "0",
+			"text": "mybatis",
+			"order": "2"
+		}, {
+			"id": "142",
+			"portfolio": "8",
+			"type": "0",
+			"text": "spring security",
+			"order": "1"
+		}, {
+			"id": "141",
+			"portfolio": "8",
+			"type": "0",
+			"text": "spring framework",
+			"order": "0"
+		}],
+		"description": [{
+			"id": "159",
+			"portfolio": "8",
+			"type": "1",
+			"text": "Open API 결과 기능 Back end, Front end개발, Front end개발",
+			"order": "14"
+		}, {
+			"id": "158",
+			"portfolio": "8",
+			"type": "1",
+			"text": "Open API 응답 통계 기능 Back end, Front end개발",
+			"order": "13"
+		}, {
+			"id": "157",
+			"portfolio": "8",
+			"type": "1",
+			"text": "Open API 활용 제한 관리 기능 Back end, Front end개발",
+			"order": "12"
+		}, {
+			"id": "156",
+			"portfolio": "8",
+			"type": "1",
+			"text": "Open API 서비스 관리 기능 Back end, Front end개발",
+			"order": "11"
+		}, {
+			"id": "155",
+			"portfolio": "8",
+			"type": "1",
+			"text": "Open API API 인증키 기능 Back end, Front end개발",
+			"order": "10"
+		}, {
+			"id": "154",
+			"portfolio": "8",
+			"type": "1",
+			"text": "Open API 관리자 접근 메뉴 관리 기능 Back end, Front end개발",
+			"order": "9"
+		}, {
+			"id": "153",
+			"portfolio": "8",
+			"type": "1",
+			"text": "Open API 계정 관리 기능 Back end, Front end개발",
+			"order": "8"
+		}, {
+			"id": "152",
+			"portfolio": "8",
+			"type": "1",
+			"text": "Open API 프레임웍 결정 및 프로젝트 셋팅",
+			"order": "7"
+		}, {
+			"id": "151",
+			"portfolio": "8",
+			"type": "1",
+			"text": "Survey설문 발송 내역 기능 Back end, Front end개발",
+			"order": "6"
+		}, {
+			"id": "150",
+			"portfolio": "8",
+			"type": "1",
+			"text": "Survey설문 목록 기능 Back end, Front end개발",
+			"order": "5"
+		}, {
+			"id": "149",
+			"portfolio": "8",
+			"type": "1",
+			"text": "Survey설문 대상자 기능 Back end, Front end개발",
+			"order": "4"
+		}, {
+			"id": "148",
+			"portfolio": "8",
+			"type": "1",
+			"text": "Survey사용자 관리 기능 Back end, Front end개발",
+			"order": "3"
+		}, {
+			"id": "147",
+			"portfolio": "8",
+			"type": "1",
+			"text": "Survey접속 로그 기능 Back end, Front end개발",
+			"order": "2"
+		}, {
+			"id": "146",
+			"portfolio": "8",
+			"type": "1",
+			"text": "Survey 설문 작성 로그 기능 Back end, Front end개발",
+			"order": "1"
+		}, {
+			"id": "145",
+			"portfolio": "8",
+			"type": "1",
+			"text": "Survey 달력 기능 Back end, Front end개발",
+			"order": "0"
+		}]
+	}, {
+		"id": "7",
+		"ordering_organization": "정보통신산업진흥원",
+		"company": "(주)유진정보",
+		"title": "창조경제 글로벌포럼",
+		"start": "2014-03-05",
+		"end": "2014-03-31",
+		"os": "UNIX",
+		"database": "Sybase",
+		"webserver": "apache",
+		"wasserver": "tomcat",
+		"url": "http://gfce.kr",
+		"newFilePath": "http://kwangheum.com/resources/images/portfolio/gfce.kr.png",
+		"register": "1",
+		"register_ip": "127.0.0.1",
+		"register_date": "2015-09-23",
+		"update_ip": "118.42.94.159",
+		"update_date": "2016-08-04",
+		"framework": [{
+			"id": "163",
+			"portfolio": "7",
+			"type": "0",
+			"text": "jquery(etc)",
+			"order": "3"
+		}, {
+			"id": "162",
+			"portfolio": "7",
+			"type": "0",
+			"text": "mybatis",
+			"order": "2"
+		}, {
+			"id": "161",
+			"portfolio": "7",
+			"type": "0",
+			"text": "spring security",
+			"order": "1"
+		}, {
+			"id": "160",
+			"portfolio": "7",
+			"type": "0",
+			"text": "spring framework",
+			"order": "0"
+		}],
+		"description": [{
+			"id": "164",
+			"portfolio": "7",
+			"type": "1",
+			"text": "메인의 강연자들 리스트 기능 Back end, Front end개발",
+			"order": "0"
+		}]
+	}, {
+		"id": "6",
+		"ordering_organization": "정보통신산업진흥원",
+		"company": "(주)유진정보",
+		"title": "ITFIND 등 대외 서비스 개발 및 운영 유지보수 및 DB구축 사업",
+		"start": "2013-09-12",
+		"end": "2015-04-13",
+		"os": "UNIX",
+		"database": "Oracle",
+		"webserver": "apache",
+		"wasserver": "tomcat",
+		"url": "http://itstat.go.kr",
+		"newFilePath": "http://kwangheum.com/resources/images/portfolio/itstat.go.kr.png",
+		"register": "1",
+		"register_ip": "127.0.0.1",
+		"register_date": "2015-09-23",
+		"update_ip": "118.42.94.159",
+		"update_date": "2016-08-04",
+		"framework": [{
+			"id": "169",
+			"portfolio": "6",
+			"type": "0",
+			"text": "jquery(etc)",
+			"order": "4"
+		}, {
+			"id": "168",
+			"portfolio": "6",
+			"type": "0",
+			"text": "ext js 4.2",
+			"order": "3"
+		}, {
+			"id": "167",
+			"portfolio": "6",
+			"type": "0",
+			"text": "mybatis",
+			"order": "2"
+		}, {
+			"id": "166",
+			"portfolio": "6",
+			"type": "0",
+			"text": "spring security",
+			"order": "1"
+		}, {
+			"id": "165",
+			"portfolio": "6",
+			"type": "0",
+			"text": "spring framework",
+			"order": "0"
+		}],
+		"description": [{
+			"id": "181",
+			"portfolio": "6",
+			"type": "1",
+			"text": "Fusion chart plugin을 사용하여 통계 그래프 기능 Back end, Front end개발",
+			"order": "11"
+		}, {
+			"id": "180",
+			"portfolio": "6",
+			"type": "1",
+			"text": "코드관리 기능 Back end, Front end개발",
+			"order": "10"
+		}, {
+			"id": "179",
+			"portfolio": "6",
+			"type": "1",
+			"text": "통계관리 기능 Back end, Front end개발",
+			"order": "9"
+		}, {
+			"id": "178",
+			"portfolio": "6",
+			"type": "1",
+			"text": "사이트 통계 기능 Back end, Front end개발",
+			"order": "8"
+		}, {
+			"id": "177",
+			"portfolio": "6",
+			"type": "1",
+			"text": "모바일 사이트 개발",
+			"order": "7"
+		}, {
+			"id": "176",
+			"portfolio": "6",
+			"type": "1",
+			"text": "찾아오시는길 naver 지도 api 연동 개발",
+			"order": "6"
+		}, {
+			"id": "175",
+			"portfolio": "6",
+			"type": "1",
+			"text": "통계 전체 목록 받기 기능 Back end, Front end개발",
+			"order": "5"
+		}, {
+			"id": "174",
+			"portfolio": "6",
+			"type": "1",
+			"text": "ICT 분류체계 기능 Back end, Front end개발",
+			"order": "4"
+		}, {
+			"id": "173",
+			"portfolio": "6",
+			"type": "1",
+			"text": "ICT 50대 통계지표 기능 Back end, Front end개발",
+			"order": "3"
+		}, {
+			"id": "172",
+			"portfolio": "6",
+			"type": "1",
+			"text": "통계 조회 기능 Back end, Front end개발",
+			"order": "2"
+		}, {
+			"id": "171",
+			"portfolio": "6",
+			"type": "1",
+			"text": "프린트 기능 개발",
+			"order": "1"
+		}, {
+			"id": "170",
+			"portfolio": "6",
+			"type": "1",
+			"text": "엑셀 업로드 및 다운로드 기능 Back end, Front end개발",
+			"order": "0"
+		}]
+	}, {
+		"id": "5",
+		"ordering_organization": "정보통신산업진흥원",
+		"company": "(주)유진정보",
+		"title": "전문인력양성 교육모니터링시스템(Edu-Biz)",
+		"start": "2013-08-01",
+		"end": "2013-09-11",
+		"os": "UNIX",
+		"database": "Tibero",
+		"webserver": "",
+		"wasserver": "jeus",
+		"url": "http://techforce.or.kr/edu/summary.it",
+		"newFilePath": "http://kwangheum.com/resources/images/portfolio/techforce.or.kr.png",
+		"register": "1",
+		"register_ip": "127.0.0.1",
+		"register_date": "2015-09-23",
+		"update_ip": "118.42.94.159",
+		"update_date": "2016-08-04",
+		"framework": [{
+			"id": "184",
+			"portfolio": "5",
+			"type": "0",
+			"text": "jquery(etc)",
+			"order": "2"
+		}, {
+			"id": "183",
+			"portfolio": "5",
+			"type": "0",
+			"text": "ibatis",
+			"order": "1"
+		}, {
+			"id": "182",
+			"portfolio": "5",
+			"type": "0",
+			"text": "spring framework",
+			"order": "0"
+		}],
+		"description": [{
+			"id": "185",
+			"portfolio": "5",
+			"type": "1",
+			"text": "게시판 기능 Back end, Front end개발",
+			"order": "0"
+		}]
+	}, {
+		"id": "4",
+		"ordering_organization": "정보통신산업진흥원",
+		"company": "(주)유진정보",
+		"title": "EIF 전자정보 산업대전",
+		"start": "2013-07-29",
+		"end": "2013-09-30",
+		"os": "UNIX",
+		"database": "Sybase",
+		"webserver": "",
+		"wasserver": "tomcat",
+		"url": "http://eif.kr",
+		"newFilePath": "http://kwangheum.com/resources/images/portfolio/eif.kr.png",
+		"register": "1",
+		"register_ip": "127.0.0.1",
+		"register_date": "2015-09-23",
+		"update_ip": "118.42.94.159",
+		"update_date": "2016-08-04",
+		"framework": [{
+			"id": "188",
+			"portfolio": "4",
+			"type": "0",
+			"text": "jquery(etc)",
+			"order": "2"
+		}, {
+			"id": "187",
+			"portfolio": "4",
+			"type": "0",
+			"text": "mybatis",
+			"order": "1"
+		}, {
+			"id": "186",
+			"portfolio": "4",
+			"type": "0",
+			"text": "spring framework",
+			"order": "0"
+		}],
+		"description": [{
+			"id": "190",
+			"portfolio": "4",
+			"type": "1",
+			"text": "보여지는 부분 전체 리뉴얼",
+			"order": "1"
+		}, {
+			"id": "189",
+			"portfolio": "4",
+			"type": "1",
+			"text": "결제 모듈 기능 Back end, Front end개발",
+			"order": "0"
+		}]
+	}, {
+		"id": "3",
+		"ordering_organization": "정보통신산업진흥원",
+		"company": "(주)유진정보",
+		"title": "NIPA 영문홈페이지 리뉴얼 용역",
+		"start": "2013-06-12",
+		"end": "2013-07-12",
+		"os": "UNIX",
+		"database": "Sybase",
+		"webserver": "",
+		"wasserver": "tomcat",
+		"url": "http://www.nipa.kr/eng/main.it",
+		"newFilePath": "http://kwangheum.com/resources/images/portfolio/nipa.kr.png",
+		"register": "1",
+		"register_ip": "127.0.0.1",
+		"register_date": "2015-09-23",
+		"update_ip": "118.42.94.159",
+		"update_date": "2016-08-04",
+		"framework": [{
+			"id": "193",
+			"portfolio": "3",
+			"type": "0",
+			"text": "jquery(etc)",
+			"order": "2"
+		}, {
+			"id": "192",
+			"portfolio": "3",
+			"type": "0",
+			"text": "ibatis",
+			"order": "1"
+		}, {
+			"id": "191",
+			"portfolio": "3",
+			"type": "0",
+			"text": "spring framework",
+			"order": "0"
+		}],
+		"description": [{
+			"id": "196",
+			"portfolio": "3",
+			"type": "1",
+			"text": "보여지는 부분 전체 리뉴얼",
+			"order": "2"
+		}, {
+			"id": "195",
+			"portfolio": "3",
+			"type": "1",
+			"text": "Youtube API를 사용한 동영상 게시판 기능 Back end, Front end개발",
+			"order": "1"
+		}, {
+			"id": "194",
+			"portfolio": "3",
+			"type": "1",
+			"text": "게시판 기능 Back end, Front end개발",
+			"order": "0"
+		}]
+	}, {
+		"id": "2",
+		"ordering_organization": "정보통신산업진흥원",
+		"company": "(주)유진정보",
+		"title": "전자거래분쟁조정위원회 모바일 웹 사이트 구축 용역",
+		"start": "2013-05-16",
+		"end": "2013-06-14",
+		"os": "CentOS 5.8",
+		"database": "MS SQL Server 7.0",
+		"webserver": "",
+		"wasserver": "tomcat",
+		"url": "http://m.ecmc.or.kr/mobile/main.it",
+		"newFilePath": "http://kwangheum.com/resources/images/portfolio/m.ecmc.or.kr.png",
+		"register": "1",
+		"register_ip": "127.0.0.1",
+		"register_date": "2015-09-23",
+		"update_ip": "118.42.94.159",
+		"update_date": "2016-08-04",
+		"framework": [{
+			"id": "199",
+			"portfolio": "2",
+			"type": "0",
+			"text": "jquery(etc)",
+			"order": "2"
+		}, {
+			"id": "198",
+			"portfolio": "2",
+			"type": "0",
+			"text": "ibatis",
+			"order": "1"
+		}, {
+			"id": "197",
+			"portfolio": "2",
+			"type": "0",
+			"text": "spring framework",
+			"order": "0"
+		}],
+		"description": [{
+			"id": "200",
+			"portfolio": "2",
+			"type": "1",
+			"text": "JQM plugin을 사용하여 모바일 사이트 개발",
+			"order": "0"
+		}]
+	}, {
+		"id": "1",
+		"ordering_organization": "정보통신산업진흥원",
+		"company": "(주)유진정보",
+		"title": "모바일산업 통합정보 포털 구축 용역",
+		"start": "2013-01-02",
+		"end": "2013-02-26",
+		"os": "UNIX",
+		"database": "Sybase",
+		"webserver": "apache",
+		"wasserver": "tomcat",
+		"url": "http://moi.itfind.or.kr",
+		"newFilePath": "http://kwangheum.com/resources/images/portfolio/moi.itfind.or.kr.png",
+		"register": "1",
+		"register_ip": "127.0.0.1",
+		"register_date": "2015-09-23",
+		"update_ip": "118.42.94.159",
+		"update_date": "2016-08-04",
+		"framework": [{
+			"id": "203",
+			"portfolio": "1",
+			"type": "0",
+			"text": "jquery(etc)",
+			"order": "2"
+		}, {
+			"id": "202",
+			"portfolio": "1",
+			"type": "0",
+			"text": "ibatis",
+			"order": "1"
+		}, {
+			"id": "201",
+			"portfolio": "1",
+			"type": "0",
+			"text": "spring framework",
+			"order": "0"
+		}],
+		"description": [{
+			"id": "206",
+			"portfolio": "1",
+			"type": "1",
+			"text": "세미나/컨퍼런스 기능 Back end, Front end개발",
+			"order": "2"
+		}, {
+			"id": "205",
+			"portfolio": "1",
+			"type": "1",
+			"text": "게시판 기능 Back end, Front end개발",
+			"order": "1"
+		}, {
+			"id": "204",
+			"portfolio": "1",
+			"type": "1",
+			"text": "스케쥴러 돌면서 추가된 사이트들의 RSS 글을 긁어와 DB로 넣는 기능 Back end 개발",
+			"order": "0"
+		}]
+	}]
+}

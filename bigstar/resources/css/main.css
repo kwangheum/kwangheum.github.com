@@ -1,0 +1,142 @@
+@CHARSET "UTF-8";
+body{margin: 0;padding: 0;font-family:"Nanum Pen Script", cursive}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{font-family:"Nanum Pen Script", cursive}
+.intro-content-inner h1, .intro-content-inner h2, .intro-content-inner h3, .intro-content-inner h4, .intro-content-inner h5, .intro-content-inner h6 {
+	color: #333 !important;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+	margin-top: 0px;
+	line-height: 1.5;
+	margin-bottom: 15px;
+}
+h1 {font-size: 64px;}
+h2 {font-size: 42px;}
+h3 {font-size: 36px;}
+h4 {font-size: 32px;}
+h5 {font-size: 28px;}
+h6 {font-size: 26px;}
+section.page{
+	min-height: 100vh;
+	padding-top: 60px;
+	padding-bottom: 120px;
+	border-bottom: 1px solid #ddd;
+}
+section.page.info{
+	background-image: url(../images/background1.png);
+	background-color: rgba(255, 182, 193, 0.43);
+}
+section.page.intro-text{
+	background-image: url(../images/background2.png);
+	background-color: rgba(255, 182, 193, 0.43);
+}
+section.page.intro-text .info{
+	color: #aaa;
+	font-size: 2em;
+	font-family: 'Nanum Pen Script', cursive;
+	padding: 30px 0;
+	background: #fff;
+	border-radius: 15px;
+	margin-top: 15px;
+}
+section.page.intro-text p{
+	padding-left: 40px;color: #aaa;
+	background: url(../images/label.png) no-repeat center center;
+	background-size: 100% 100%;
+	max-width:600px;
+	width:100%;
+	height: 80px;
+	font-size: 3em;
+	font-family: 'Nanum Pen Script', cursive;
+	letter-spacing: 40px;
+	display: inline-block;
+}
+section.page.intro-text .info span{
+	 line-height: 1.3em;
+	 display:block;
+}
+section.page>.container{
+	padding-top: 60px;
+}
+body>section.page:last-of-type {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+#page-wraper{
+	position: relative;
+	width: 100%;
+}
+.intro-title{
+	font-size: 80px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	font-weight: 600;
+	line-height: 1.1;
+}
+.intro{
+	position: relative;
+	overflow: hidden;
+}
+.page-title{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.page-title .underline{
+	border-bottom: 3px solid #222;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	font-size: 32px;
+}
+.birthday-circle {
+	background-color: #ffb6c1;
+	width: 150px;
+	height: 150px;
+	-webkit-border-radius:100px;
+	-moz-border-radius:100px;
+	border-radius:100px;
+	color:#fff;
+	text-align: center;
+	font-size:35px;
+	line-height:30px;
+	padding-top:25px;
+	position: absolute;
+	top:5px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+div.line{
+	background-color:rgba(255, 182, 193, 0.43);
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	color:#8b4513;
+	font-size:20px;
+	text-align: center;
+}
+div.line.type1{
+	height:30px;
+	margin: 30px 10px;
+}
+div.line.type2{
+	height:45px;
+	margin: 70px 10px;
+}
+div.line.type3{
+	height:100px;
+	margin: 130px 10px;
+	padding-top:30px;
+	line-height: 20px;
+}
+.bigstar-image img{
+	width:100%;
+	max-width: 600px;
+	margin-top: 230px;
+}
+@media (max-width: 768px) {
+	.page-where{margin-top:50px;}
+}
