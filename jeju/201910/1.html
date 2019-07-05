@@ -8,7 +8,9 @@
 		<style>
 			.infowindow{font-family: AppleSDGothicNeo-Regular,'돋움',dotum,sans-serif;letter-spacing: 0;padding:5px 15px;color:#222}
 			.infowindow h3{font-size:18px;margin:10px 0;}
-			.infowindow .body{font-size:13px;padding:0 5px;}
+			.infowindow .body{font-size:13px;}
+            .infowindow .day{color: #666; font-size:13px;margin-bottom: 5px;}
+            .infowindow .sep{margin: 2px 5px 0;height:10px;width:1px;background-color: #e2e2e2;display:inline-block;}
 			.infowindow .body div{margin-bottom:5px}
 			.infowindow .body .jibun{color: #919191;}
 			.infowindow a.tel{font-size:14px;}
@@ -34,31 +36,40 @@
                 "title":"흰수염고래리조트",
                 "roadAddress":"제주특별자치도 제주시 애월읍 일주서로 6818",
                 "jibunAddress":"구엄리 941",
+                "day":"2019.10.29~2019.10.31<span class='sep'></span>3박",
                 "tel":"064-747-5553"
             });
             createMarker({
                 "id":"2",
-                "center":[33.247593133709266, 126.40803387916003],
-                "title":"제주신라호텔",
-                "roadAddress":"제주특별자치도 서귀포시 중문관광로72번길 75",
-                "jibunAddress":"색달동 3039-3",
-                "tel":"064-735-5114"
-            });
-            createMarker({
-                "id":"2",
-                "center":[33.55655568246566, 126.72875671868246],
-                "title":"예그리나리조트",
-                "roadAddress":"제주특별자치도 제주시 구좌읍 일주동로 1845",
-                "jibunAddress":"구좌읍 김녕리 5993",
-                "tel":"064-784-1111"
-            });
-            createMarker({
-                "id":"5",
                 "center":[33.259614, 126.406045],
                 "title":"호텔 더본 제주",
                 "roadAddress":"제주특별자치도 서귀포시 색달로 18",
                 "jibunAddress":"색달동 2138",
+                "day":"2019.11.01~2019.11.03<span class='sep'></span>3박",
                 "tel":"064-766-8988"
+            });
+            createMarker({
+                "id":"3",
+                "center":[33.247593133709266, 126.40803387916003],
+                "title":"제주신라호텔",
+                "roadAddress":"제주특별자치도 서귀포시 중문관광로72번길 75",
+                "jibunAddress":"색달동 3039-3",
+                "day":"2019.11.04~2019.11.05<span class='sep'></span>2박",
+                "tel":"064-735-5114"
+            });
+            createMarker({
+                "id":"4",
+                "center":[33.50664200881807, 126.95695010891302],
+                "title":"우도 숙소미정 ",
+            });
+            createMarker({
+                "id":"5",
+                "center":[33.55655568246566, 126.72875671868246],
+                "title":"예그리나리조트",
+                "roadAddress":"제주특별자치도 제주시 구좌읍 일주동로 1845",
+                "jibunAddress":"구좌읍 김녕리 5993",
+                "day":"2019.11.10~2019.11.11<span class='sep'></span>2박",
+                "tel":"064-784-1111"
             });
             function createMarker(options){
                 var marker = new kakao.maps.Marker({
@@ -70,6 +81,7 @@
                     '    <div class="content">',
                     '        <div class="header">',
                     '            <h3>'+options.title+'</h3>',
+            '                   '+(options.day?"<div class='day'>"+options.day+"</div>":"")+''+
                     '        </div>',
                     '        <div class="body">',
                     '            <div class="detail">',
