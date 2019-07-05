@@ -1,0 +1,106 @@
+<html>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <head>
+		<title>제주도 여행</title>
+		<style>html,body{margin:0;padding:0;}</style>
+		<style>
+			.infowindow{font-family: AppleSDGothicNeo-Regular,'돋움',dotum,sans-serif;letter-spacing: 0;padding:5px 15px;color:#222}
+			.infowindow h3{font-size:18px;margin:10px 0;}
+			.infowindow .body{font-size:13px;padding:0 5px;}
+			.infowindow .body div{margin-bottom:5px}
+			.infowindow .body .jibun{color: #919191;}
+			.infowindow a.tel{font-size:14px;}
+			.infowindow a{text-decoration:none;color:#288756;display:block;}
+		</style>
+        <script src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=4c6ee9afbe355ab9fb195afeb6a15b56"></script>
+    </head>
+    <body>
+        <div id="map" style="width:100%;height:100vh;"></div>
+        <script>
+			var activeInfoWindow;
+            var mapOptions = {
+                center: new kakao.maps.LatLng(33.392754471929344, 126.55527532172167),
+                level: 9
+            };
+            var map = new kakao.maps.Map(document.getElementById('map'), mapOptions);
+            kakao.maps.event.addListener(map, 'click', function(e) {
+                console.log(e)
+            });
+            createMarker({
+                "id":"1",
+                "center":[33.47487966836542, 126.38052776036747],
+                "title":"흰수염고래리조트",
+                "roadAddress":"제주특별자치도 제주시 애월읍 일주서로 6818",
+                "jibunAddress":"구엄리 941",
+                "tel":"064-747-5553"
+            });
+            createMarker({
+                "id":"2",
+                "center":[33.247593133709266, 126.40803387916003],
+                "title":"제주신라호텔",
+                "roadAddress":"제주특별자치도 서귀포시 중문관광로72번길 75",
+                "jibunAddress":"색달동 3039-3",
+                "tel":"064-735-5114"
+            });
+            createMarker({
+                "id":"2",
+                "center":[33.55655568246566, 126.72875671868246],
+                "title":"예그리나리조트",
+                "roadAddress":"제주특별자치도 제주시 구좌읍 일주동로 1845",
+                "jibunAddress":"구좌읍 김녕리 5993",
+                "tel":"064-784-1111"
+            });
+            createMarker({
+                "id":"5",
+                "center":[33.259614, 126.406045],
+                "title":"호텔 더본 제주",
+                "roadAddress":"제주특별자치도 서귀포시 색달로 18",
+                "jibunAddress":"색달동 2138",
+                "tel":"064-766-8988"
+            });
+            function createMarker(options){
+                var marker = new kakao.maps.Marker({
+                    position: new kakao.maps.LatLng(options.center[0],options.center[1]),
+                    map: map
+                });
+                var contentString = [
+                    '<div class="infowindow">',
+                    '    <div class="content">',
+                    '        <div class="header">',
+                    '            <h3>'+options.title+'</h3>',
+                    '        </div>',
+                    '        <div class="body">',
+                    '            <div class="detail">',
+                    '                <div>',
+                    '                   '+(options.roadAddress?"<div>"+options.roadAddress+"</div>":"")+''+
+                    '                   '+(options.jibunAddress?"<div class='jibun'>(지번) "+options.jibunAddress+"</div>":"")+''+
+                    '                   '+(options.tel?"<div class='tel'><a href='tel:"+options.tel+"'>"+options.tel+"</a></div>":"")+''+
+                    '                </div>',
+                    '            </div>',
+                    '        </div>',
+                    '    </div>',
+                    '</div>'
+                ].join('');
+                var infowindow = new kakao.maps.InfoWindow({
+                    content: contentString,
+					removable:true
+                });
+                 kakao.maps.event.addListener(marker, "click", function(e) {
+					if(activeInfoWindow&&activeInfoWindow.getMap()){
+						activeInfoWindow.close();
+					}
+					activeInfoWindow = infowindow;
+                    if (infowindow.getMap()) {
+                        infowindow.close();
+                    } else {
+                        infowindow.open(map, marker);
+                    }
+                });
+                window["marker_"+options.id] = marker;
+                window["infowindow_"+options.id] = infowindow;
+            }
+        </script>
+    </body>
+</html>
