@@ -1,0 +1,341 @@
+<html>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<head>
+		<title>2018 제주도 여행</title>
+		<style>html,body{margin:0;padding:0;}</style>
+		<style>
+			.infowindow{font-family: AppleSDGothicNeo-Regular,'돋움',dotum,sans-serif;letter-spacing: 0;padding:5px 15px;color:#222}
+			.infowindow h3{font-size:18px;margin:10px 0;}
+			.infowindow .body{font-size:13px;}
+			.infowindow .day{color: #666; font-size:13px;margin-bottom: 5px;}
+			.infowindow .sep{margin: 2px 5px 0;height:10px;width:1px;background-color: #e2e2e2;display:inline-block;}
+			.infowindow .middot{width:5px;height:5px;border-radius:50%;background:#e2e2e2;display: inline-block;margin:0 5px 2px 5px;line-height:16px;}
+			.infowindow .body div{margin-bottom:5px}
+			.infowindow .body .jibun{color: #919191;}
+			.infowindow a{text-decoration:none;color:#288756;}
+			.infowindow a.tel{font-size:14px;display: inline-block;}
+			.infowindow .price{color:#b1aa14;}
+		</style>
+		<script src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=4c6ee9afbe355ab9fb195afeb6a15b56"></script>
+	</head>
+	<body>
+		<div id="map" style="width:100%;height:100vh;"></div>
+		<script>
+			var activeInfoWindow;
+            var mapOptions = {
+                center: new kakao.maps.LatLng(33.392754471929344, 126.55527532172167),
+                level: 11
+            };
+            var map = new kakao.maps.Map(document.getElementById('map'), mapOptions);
+            kakao.maps.event.addListener(map, 'drag', function(e) {
+                if(activeInfoWindow&&activeInfoWindow.getMap()){
+                    activeInfoWindow.close();
+                }
+            });
+            kakao.maps.event.addListener(map, 'click', function(e) {
+                if(activeInfoWindow&&activeInfoWindow.getMap()){
+                    activeInfoWindow.close();
+                }
+                console.log(e);
+            });
+			createMarker({
+				"id":"1",
+				"center":[33.463628, 126.453861],
+				"title":"샹그릴라호텔",
+				"roadAddress":"제주특별자치도 제주시 해안마을북길 14-6",
+				"jibunAddress":"해안동 2101-3",
+				"tel":"064-743-8098"
+			});
+			createMarker({
+				"id":"2",
+				"center":[33.386398, 126.224457],
+				"title":"제갈양",
+				"roadAddress":"제주특별자치도 제주시 한림읍 한림로 155",
+				"jibunAddress":"금능리 1737",
+				"tel":"010-2375-6011"
+			});
+			createMarker({
+				"id":"3",
+				"center":[33.289160, 126.370135],
+				"title":"카멜리아힐",
+				"roadAddress":"제주 서귀포시 안덕면 병악로 166",
+				"jibunAddress":"상창리 271",
+				"tel":"064-792-0088"
+			});
+			createMarker({
+				"id":"4",
+				"center":[33.306127, 126.289420],
+				"title":"오설록티뮤지엄",
+				"roadAddress":"제주특별자치도 서귀포시 안덕면 신화역사로 15",
+				"jibunAddress":"서광리 1235-1 오설록",
+				"tel":"064-794-5312"
+			});
+			createMarker({
+				"id":"5",
+				"center":[33.259614, 126.406045],
+				"title":"호텔 더본 제주",
+				"roadAddress":"제주특별자치도 서귀포시 색달로 18",
+				"jibunAddress":"색달동 2138",
+				"tel":"064-766-8988"
+			});
+			createMarker({
+				"id":"6",
+				"center":[33.232062, 126.314641],
+				"title":"용머리해안",
+				"roadAddress":"제주특별자치도 서귀포시 안덕면 사계리",
+				"tel":"064-794-2940"
+			});
+			createMarker({
+				"id":"7",
+				"center":[33.250225, 126.563977],
+				"title":"서귀포매일올레시장",
+				"roadAddress":"제주 서귀포시 중앙로62번길 18",
+				"jibunAddress":"서귀동 277-1",
+				"tel":"064-762-1949"
+			});
+			createMarker({
+				"id":"8",
+				"center":[33.245664, 126.338767],
+				"title":"산방산초가집",
+				"roadAddress":"제주 서귀포시 안덕면 화순해안로 189",
+				"jibunAddress":"화순리 421-1",
+				"tel":"064-792-0688"
+			});
+			createMarker({
+				"id":"9",
+				"center":[33.259614, 126.406045],
+				"title":"호텔 더본 제주",
+				"roadAddress":"제주특별자치도 서귀포시 색달로 18",
+				"jibunAddress":"색달동 2138",
+				"tel":"064-766-8988"
+			});
+			createMarker({
+				"id":"10",
+				"center":[33.209945, 126.290588],
+				"title":"마라도 가는 여객선",
+				"roadAddress":"제주특별자치도 서귀포시 대정읍 송악관광로 424 마라도여객선매표소",
+				"jibunAddress":"상모리 133-3",
+				"tel":"064-794-6661"
+			});
+			createMarker({
+				"id":"11",
+				"center":[33.2477673, 126.410677],
+				"title":"중문관광단지",
+				"roadAddress":"제주특별자치도 서귀포시 중문관광로72번길 35",
+				"jibunAddress":" 색달동 2812-4",
+				"tel":"064-735-7200"
+			});
+			createMarker({
+				"id":"12",
+				"center":[33.237952, 126.425046],
+				"title":"대포주상절리",
+				"roadAddress":"제주특별자치도 서귀포시 중문동",
+				"jibunAddress":"중문동 2763",
+				"tel":"064-735-7200"
+			});
+			createMarker({
+				"id":"13",
+				"center":[33.252611, 126.414335],
+				"title":"여미지식물원",
+				"roadAddress":"제주특별자치도 서귀포시 중문관광로 93",
+				"jibunAddress":"색달동 2484-1",
+				"tel":"064-735-1100"
+			});
+			createMarker({
+				"id":"14",
+				"center":[33.2514597, 126.4172759],
+				"title":"천제연폭포",
+				"roadAddress":"제주특별자치도 서귀포시 천제연로 132 천제연폭포관리소",
+				"jibunAddress":"중문동 2232",
+				"tel":"064-760-6331"
+			});
+			createMarker({
+				"id":"15",
+				"center":[33.2448204, 126.5716442],
+				"title":"정방폭포",
+				"roadAddress":"제주특별자치도 서귀포시 칠십리로214번길 37 정방폭포매표소",
+				"jibunAddress":"동홍동 278",
+				"tel":"064-733-1530"
+			});
+			createMarker({
+				"id":"16",
+				"center":[33.1179723, 126.2678113],
+				"title":"마라도"
+			});
+			createMarker({
+				"id":"17",
+				"center":[33.2500893, 126.4314167],
+				"title":"명가 흑돈마을",
+				"roadAddress":"제주특별자치도 서귀포시 중문관광로 336 명가흑돈마을",
+				"jibunAddress":"대포동 747-2",
+				"tel":"064-739-8295"
+			});
+			createMarker({
+				"id":"18",
+				"center":[33.2469679, 126.5544064],
+				"title":"천지연폭포",
+				"roadAddress":"제주특별자치도 서귀포시 천지동 667-7",
+				"tel":"064-733-1528"
+			});
+			createMarker({
+				"id":"19",
+				"center":[33.259614, 126.406045],
+				"title":"호텔 더본 제주",
+				"roadAddress":"제주특별자치도 서귀포시 색달로 18",
+				"jibunAddress":"색달동 2138",
+				"tel":"064-766-8988"
+			});
+			createMarker({
+				"id":"20",
+				"center":[33.2393176, 126.5586265],
+				"title":"서귀포 잠수함",
+				"roadAddress":"제주특별자치도 서귀포시 남성중로 40",
+				"jibunAddress":"서홍동 707-5",
+				"tel":"064-732-6060"
+			});
+			createMarker({
+				"id":"21",
+				"center":[33.4728925, 126.9343954],
+				"title":"성산포항여객터미널",
+				"roadAddress":"제주특별자치도 서귀포시 성산읍 성산리"
+			});
+			createMarker({
+				"id":"22",
+				"center":[33.5197688, 126.9488618],
+				"title":"파도소리해녀촌",
+				"roadAddress":"제주특별자치도 제주시 우도면 우도해안길 510",
+				"jibunAddress":"연평리 874-2",
+				"tel":"064-782-0515"
+			});
+			createMarker({
+				"id":"23",
+				"center":[33.4237621, 126.9307478],
+				"title":"섭지코지",
+				"roadAddress":"제주특별자치도 서귀포시 성산읍 고성리",
+				"tel":"064-782-2810"
+			});
+			createMarker({
+				"id":"24",
+				"center":[33.4942523, 126.9467386],
+				"title":"뽀요요 펜션",
+				"roadAddress":"제주특별자치도 제주시 우도면 우도해안길 128",
+				"jibunAddress":"연평리 2652",
+				"tel":"064-783-8118"
+			});
+			createMarker({
+				"id":"25",
+				"center":[33.4593003, 126.9300045],
+				"title":"해촌",
+				"roadAddress":"제주특별자치도 서귀포시 성산읍 일출로 220",
+				"jibunAddress":"성산리 399-10",
+				"tel":"064-784-8001"
+			});
+			createMarker({
+				"id":"26",
+				"center":[33.4942523, 126.9467386],
+				"title":"뽀요요 펜션",
+				"roadAddress":"제주특별자치도 제주시 우도면 우도해안길 128",
+				"jibunAddress":"연평리 2652",
+				"tel":"064-783-8118"
+			});
+			createMarker({
+				"id":"27",
+				"center":[33.463628, 126.453861],
+				"title":"샹그릴라호텔",
+				"roadAddress":"제주특별자치도 제주시 해안마을북길 14-6",
+				"jibunAddress":"해안동 2101-3",
+				"tel":"064-743-8098"
+			});
+			createMarker({
+				"id":"28",
+				"center":[33.4475974, 126.6720038],
+				"title":"에코랜드",
+				"roadAddress":"제주특별자치도 제주시 조천읍 번영로 1278-169",
+				"jibunAddress":"대흘리 1221-1",
+				"tel":"064-802-8020"
+			});
+			createMarker({
+				"id":"29",
+				"center":[33.4326494, 126.9279655],
+				"title":"아쿠아플라넷 제주",
+				"roadAddress":"제주특별자치도 서귀포시 성산읍 섭지코지로 95",
+				"jibunAddress":"고성리 127-3",
+				"tel":"064-780-0900"
+			});
+			createMarker({
+				"id":"30",
+				"center":[33.5123547, 126.5266795],
+				"title":"동문재래시장",
+				"roadAddress":"제주특별자치도 제주시 관덕로14길 20",
+				"jibunAddress":"이도1동 1436-7",
+				"tel":"064-752-3001"
+			});
+			createMarker({
+				"id":"31",
+				"center":[33.5159886, 126.5117799],
+				"title":"용두암",
+				"roadAddress":"제주특별자치도 제주시 용담2동",
+				"tel":"064-728-3918"
+			});
+			createMarker({
+				"id":"32",
+				"center":[33.4976436, 126.4524795],
+				"title":"이호테우해수욕장",
+				"roadAddress":"제주특별자치도 제주시 도리로 20",
+				"jibunAddress":"이호동 1600-1",
+				"tel":"064-728-3994"
+			});
+			function createMarker(options){
+                var marker = new kakao.maps.Marker({
+                    position: new kakao.maps.LatLng(options.center[0],options.center[1]),
+                    map: map
+                });
+                var bottom = [];
+                if(options.tel){
+                    bottom.push("<a href='tel:"+options.tel+"'>"+options.tel+"</a>");
+                }
+                if(options.price){
+                    bottom.push("<span class='price'>₩ "+options.price+"</span>");
+                }
+                var contentString = [
+                    '<div class="infowindow">',
+                    '    <div class="content">',
+                    '        <div class="header">',
+                    '            <h3>'+options.title+'</h3>',
+                    '           '+(options.day?"<div class='day'>"+options.day+"</div>":"")+''+
+                    '        </div>',
+                    '        <div class="body">',
+                    '            <div class="detail">',
+                    '                <div>',
+                    '                   '+(options.roadAddress?"<div style='white-space:nowrap'>"+options.roadAddress+"</div>":"")+''+
+                    '                   '+(options.jibunAddress?"<div class='jibun'>(지번) "+options.jibunAddress+"</div>":"")+''+
+                    '                   '+(bottom?"<div>"+bottom.join("<span class='middot'></span>")+"</div>":"")+''+
+                    '                </div>',
+                    '            </div>',
+                    '        </div>',
+                    '    </div>',
+                    '</div>'
+                ].join('');
+                var infowindow = new kakao.maps.InfoWindow({
+                    content: contentString,
+					removable:true
+                });
+                 kakao.maps.event.addListener(marker, "click", function(e) {
+					if(activeInfoWindow&&activeInfoWindow.getMap()){
+						activeInfoWindow.close();
+					}
+					activeInfoWindow = infowindow;
+                    if (infowindow.getMap()) {
+                        infowindow.close();
+                    } else {
+                        infowindow.open(map, marker);
+                    }
+                });
+                window["marker_"+options.id] = marker;
+                window["infowindow_"+options.id] = infowindow;
+            }
+		</script>
+	</body>
+</html>
