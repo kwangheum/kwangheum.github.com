@@ -1,0 +1,150 @@
+<html>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<head>
+		<title>2019 제주도 여행</title>
+		<style>html,body{margin:0;padding:0;}</style>
+		<style>
+			.infowindow{font-family: AppleSDGothicNeo-Regular,'돋움',dotum,sans-serif;letter-spacing: 0;padding:5px 15px;color:#222}
+			.infowindow h3{font-size:18px;margin:10px 0;}
+			.infowindow .body{font-size:13px;}
+			.infowindow .day{color: #666; font-size:13px;margin-bottom: 5px;}
+			.infowindow .sep{margin: 2px 5px 0;height:10px;width:1px;background-color: #e2e2e2;display:inline-block;}
+			.infowindow .middot{width:5px;height:5px;border-radius:50%;background:#e2e2e2;display: inline-block;margin:0 5px 2px 5px;line-height:16px;}
+			.infowindow .body div{margin-bottom:5px}
+			.infowindow .body .jibun{color: #919191;}
+			.infowindow a{text-decoration:none;color:#288756;}
+			.infowindow a.tel{font-size:14px;display: inline-block;}
+			.infowindow .price{color:#b1aa14;}
+		</style>
+		<script src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=4c6ee9afbe355ab9fb195afeb6a15b56"></script>
+	</head>
+	<body>
+		<div id="map" style="width:100%;height:100vh;"></div>
+		<script>
+			var activeInfoWindow;
+            var mapOptions = {
+                center: new kakao.maps.LatLng(33.392754471929344, 126.55527532172167),
+                level: 11
+            };
+            var map = new kakao.maps.Map(document.getElementById('map'), mapOptions);
+            kakao.maps.event.addListener(map, 'drag', function(e) {
+                if(activeInfoWindow&&activeInfoWindow.getMap()){
+                    activeInfoWindow.close();
+                }
+            });
+            kakao.maps.event.addListener(map, 'click', function(e) {
+                if(activeInfoWindow&&activeInfoWindow.getMap()){
+                    activeInfoWindow.close();
+                }
+                console.log(e);
+            });
+			
+			createMarker({
+				"id":"1",
+				"center":[33.4942523, 126.9467386],
+				"title":"뽀요요 펜션",
+				"roadAddress":"제주특별자치도 제주시 우도면 우도해안길 128",
+				"jibunAddress":"연평리 2652",
+				"tel":"064-783-8118"
+			});
+			createMarker({
+				"id":"2",
+				"center":[33.463628, 126.453861],
+				"title":"샹그릴라호텔",
+				"roadAddress":"제주특별자치도 제주시 해안마을북길 14-6",
+				"jibunAddress":"해안동 2101-3",
+				"tel":"064-743-8098"
+			});
+			createMarker({
+				"id":"3",
+				"center":[33.4475974, 126.6720038],
+				"title":"에코랜드",
+				"roadAddress":"제주특별자치도 제주시 조천읍 번영로 1278-169",
+				"jibunAddress":"대흘리 1221-1",
+				"tel":"064-802-8020"
+			});
+			createMarker({
+				"id":"4",
+				"center":[33.4326494, 126.9279655],
+				"title":"아쿠아플라넷 제주",
+				"roadAddress":"제주특별자치도 서귀포시 성산읍 섭지코지로 95",
+				"jibunAddress":"고성리 127-3",
+				"tel":"064-780-0900"
+			});
+			createMarker({
+				"id":"5",
+				"center":[33.5123547, 126.5266795],
+				"title":"동문재래시장",
+				"roadAddress":"제주특별자치도 제주시 관덕로14길 20",
+				"jibunAddress":"이도1동 1436-7",
+				"tel":"064-752-3001"
+			});
+			createMarker({
+				"id":"6",
+				"center":[33.5159886, 126.5117799],
+				"title":"용두암",
+				"roadAddress":"제주특별자치도 제주시 용담2동",
+				"tel":"064-728-3918"
+			});
+			createMarker({
+				"id":"7",
+				"center":[33.4976436, 126.4524795],
+				"title":"이호테우해수욕장",
+				"roadAddress":"제주특별자치도 제주시 도리로 20",
+				"jibunAddress":"이호동 1600-1",
+				"tel":"064-728-3994"
+			});
+			function createMarker(options){
+                var marker = new kakao.maps.Marker({
+                    position: new kakao.maps.LatLng(options.center[0],options.center[1]),
+                    map: map
+                });
+                var bottom = [];
+                if(options.tel){
+                    bottom.push("<a href='tel:"+options.tel+"'>"+options.tel+"</a>");
+                }
+                if(options.price){
+                    bottom.push("<span class='price'>₩ "+options.price+"</span>");
+                }
+                var contentString = [
+                    '<div class="infowindow">',
+                    '    <div class="content">',
+                    '        <div class="header">',
+                    '            <h3>'+options.title+'</h3>',
+                    '           '+(options.day?"<div class='day'>"+options.day+"</div>":"")+''+
+                    '        </div>',
+                    '        <div class="body">',
+                    '            <div class="detail">',
+                    '                <div>',
+                    '                   '+(options.roadAddress?"<div style='white-space:nowrap'>"+options.roadAddress+"</div>":"")+''+
+                    '                   '+(options.jibunAddress?"<div class='jibun'>(지번) "+options.jibunAddress+"</div>":"")+''+
+                    '                   '+(bottom?"<div>"+bottom.join("<span class='middot'></span>")+"</div>":"")+''+
+                    '                </div>',
+                    '            </div>',
+                    '        </div>',
+                    '    </div>',
+                    '</div>'
+                ].join('');
+                var infowindow = new kakao.maps.InfoWindow({
+                    content: contentString,
+					removable:true
+                });
+                 kakao.maps.event.addListener(marker, "click", function(e) {
+					if(activeInfoWindow&&activeInfoWindow.getMap()){
+						activeInfoWindow.close();
+					}
+					activeInfoWindow = infowindow;
+                    if (infowindow.getMap()) {
+                        infowindow.close();
+                    } else {
+                        infowindow.open(map, marker);
+                    }
+                });
+                window["marker_"+options.id] = marker;
+                window["infowindow_"+options.id] = infowindow;
+            }
+		</script>
+	</body>
+</html>
