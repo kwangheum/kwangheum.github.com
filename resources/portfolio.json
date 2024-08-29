@@ -198,9 +198,9 @@
 	},{
 		"ordering_organization": "한국교통연구원",
 		"company": "(주)유코아시스템",
-		"title": "민자도로 운영 관리 시스템",
-		"start": "2018-07-24",
-		"end": "",
+		"title": "2020 민자도로 관리지원센터 위탁 中 「민자도로 운영·관리 플랫폼 기반 구축 위탁용역」",
+		"start": "2020-04",
+		"end": "2020-11",
 		"os": "CentOS",
 		"database": "Oracle",
 		"webserver": "WebToB",
@@ -218,6 +218,34 @@
 		}],
 		"description": [{
 			"text": "설계 및 개발"
+		},{
+			"text": "PHOMS(민자도로 운영·관리 시스템) 유지보수(2단계)"
+		}]
+	},{
+		"ordering_organization": "한국교통연구원",
+		"company": "(주)유코아시스템",
+		"title": "2020 민자도로 관리지원센터 위탁 中 「민자도로 운영·관리 플랫폼 기반 구축 위탁용역」",
+		"start": "2020-04",
+		"end": "2020-11",
+		"os": "CentOS",
+		"database": "Oracle",
+		"webserver": "WebToB",
+		"wasserver": "Jeus",
+		"url": "https://phoms.koti.re.kr",
+		"newFilePath": "./resources/images/portfolio/phoms.koti.re.kr.png",
+		"register_date": "2023-07-24",
+		"update_date": "2018-09-29",
+		"framework": [{
+			"text": "spring security"
+		}, {
+			"text": "spring framework"
+		}, {
+			"text": "java"
+		}],
+		"description": [{
+			"text": "설계 및 개발"
+		},{
+			"text": "PHOMS(민자도로 운영·관리 시스템) 유지보수(2단계)"
 		}]
 	}, {
 		"ordering_organization": "한국철도기술연구원 ",
