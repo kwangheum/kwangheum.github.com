@@ -210,7 +210,7 @@
 		"webserver": "WebToB",
 		"wasserver": "Jeus",
 		"url": "https://cephis.koti.re.kr",
-		"newFilePath": "./resources/images/portfolio/phoms.koti.re.kr.png",
+		"newFilePath": "./resources/images/portfolio/cephis.koti.re.kr.png",
 		"framework": [{
 			"text": "spring security"
 		}, {
